@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techeer(테커) | 실리콘밸리 개발자 인큐베이팅 성장 스쿨</title>
+  <meta name="description" content="실리콘밸리에서 직접 운영하는 개발자 인큐베이팅 프로그램. 5주 집중 SW부트캠프, 팀 프로젝트, 해커톤, 실리콘밸리 한 달 살기까지 — 1000명 이상의 수료생을 배출한 코딩 성장 스쿨.">
+  <link rel="icon" type="image/png" href="assets/techeer-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <img src="assets/techeer-logo.png" alt="Techeer" class="nav-logo-img">
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link" data-i18n="nav.about">소개</a>
+        <a href="#programs" class="nav-link" data-i18n="nav.programs">프로그램</a>
+        <a href="#media" class="nav-link" data-i18n="nav.media">미디어</a>
+        <a href="#journey" class="nav-link" data-i18n="nav.journey">성장 여정</a>
+        <a href="#videos" class="nav-link" data-i18n="nav.videos">영상</a>
+        <a href="#contact" class="nav-link nav-link--cta" data-i18n="nav.contact">문의하기</a>
+      </div>
+      <div class="lang-toggle" id="langToggle">
+        <button class="lang-btn active" data-lang="ko">KO</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-image" style="background-image: url('assets/hero-cover.jpg');"></div>
+      <div class="hero-gradient"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-particles" id="particles"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge animate-on-scroll">
+        <span class="badge-dot"></span>
+        <span data-i18n="hero.badge">SW부트캠프 12기 — 2026년 6월 개설 예정</span>
+      </div>
+      <h1 class="hero-title animate-on-scroll" data-i18n="hero.title">
+        실리콘밸리 개발자<br>
+        <span class="hero-title--accent">인큐베이팅 성장 스쿨</span>
+      </h1>
+      <p class="hero-subtitle animate-on-scroll" data-i18n="hero.subtitle">
+        Technology + Career = <strong>Techeer(테커)</strong><br>
+        실리콘밸리에서 직접 운영하는 실리콘밸리식 프로젝트와 멘토 시스템으로<br>
+        함께 경험하고 성장하는 개발자 인큐베이팅 프로그램
+      </p>
+      <div class="hero-actions animate-on-scroll">
+        <a href="#contact" class="btn btn--primary btn--lg">
+          <span data-i18n="hero.cta1">문의하기</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <a href="#programs" class="btn btn--ghost btn--lg">
+          <span data-i18n="hero.cta2">프로그램 살펴보기</span>
+        </a>
+      </div>
+      <div class="hero-stats animate-on-scroll">
+        <div class="stat">
+          <span class="stat-number" data-count="1000">0</span><span class="stat-plus">+</span>
+          <span class="stat-label" data-i18n="hero.stat1.label">부트캠프 수료생</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-count="11">0</span><span class="stat-plus">기</span>
+          <span class="stat-label" data-i18n="hero.stat2.label">부트캠프 운영</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-count="34">0</span><span class="stat-plus">개</span>
+          <span class="stat-label" data-i18n="hero.stat3.label">참여 대학</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>스크롤</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Recruitment Status Banner -->
+  <section class="recruitment-banner section" id="recruitment">
+    <div class="container">
+      <div class="recruitment-card animate-on-scroll">
+        <div class="recruitment-content">
+          <div class="recruitment-status">
+            <span class="recruitment-badge closed" data-i18n="recruit.badge">모집 마감</span>
+          </div>
+          <h2 class="recruitment-title" data-i18n="recruit.title">테커 SW 부트캠프</h2>
+          <div class="recruitment-info">
+            <p data-i18n="recruit.line1"><strong>부트캠프 11기</strong> 프로그램은 2026년 1월 31일까지 진행되었습니다.</p>
+            <p data-i18n="recruit.line2"><strong>부트캠프 12기</strong> 프로그램은 2026년 6월에 진행 예정입니다.</p>
+          </div>
+          <p class="recruitment-note" data-i18n="recruit.note">현재 모집중인 프로그램은 없습니다. 12기 모집이 시작되면 공지할 예정입니다.</p>
+          <a href="#contact" class="btn btn--primary btn--md recruitment-btn">
+            <span data-i18n="recruit.btn">12기 알림 신청하기</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          </a>
+        </div>
+        <div class="recruitment-poster">
+          <img src="assets/bootcamp-poster.png" alt="테커 SW 부트캠프 홍보 포스터" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag" data-i18n="about.tag">About Us</span>
+        <h2 class="section-title" data-i18n="about.title"><span class="text-accent">Technology + Career</span> = Techeer</h2>
+        <p class="section-desc" data-i18n="about.desc">
+          테커는 SW부트캠프를 통해 선발하고 단계별 인큐베이팅으로<br>
+          "함께 경험하고 성장하는 개발자 그룹"입니다.<br>
+          상위권 대학 X, 스펙 X, <strong>실력 O</strong>으로 평가받자는 목표로 전체 프로그램을 구성합니다.
+        </p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card animate-on-scroll">
+          <div class="about-card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+          </div>
+          <h3 class="about-card-title" data-i18n="about.card1.title">실리콘밸리 직접 운영</h3>
+          <p class="about-card-desc" data-i18n="about.card1.desc">미국 캘리포니아, 실리콘밸리에 LLC로 정식 등록된 코딩교육기업. 실리콘밸리에서 직접 운영하는 개발기술과 실전 코딩, 커리어 개발 프로그램입니다.</p>
+        </div>
+        <div class="about-card animate-on-scroll">
+          <div class="about-card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="about-card-title" data-i18n="about.card2.title">End-to-End 코딩 집중</h3>
+          <p class="about-card-desc" data-i18n="about.card2.desc">AI, 메타버스, 블록체인이 아닌 — End-to-End 코딩 능력 향상에 집중. 팀 프로젝트와 코드 리뷰를 통해 현업에서 바로 통하는 개발 역량을 쌓습니다.</p>
+        </div>
+        <div class="about-card animate-on-scroll">
+          <div class="about-card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3 class="about-card-title" data-i18n="about.card3.title">네카라쿠배당토 취업</h3>
+          <p class="about-card-desc" data-i18n="about.card3.desc">"테커인 모두 네·카·라·쿠·배·당·토에 갑시다." 포트폴리오 프로젝트, 코딩테스트, 이력서, 인터뷰까지 — 취업에 초점을 맞춘 활동으로 커리어를 완성합니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TTimes Featured Video Section -->
+  <section class="featured-video section" id="ttimes">
+    <div class="container">
+      <div class="featured-video-layout">
+        <div class="featured-video-embed animate-on-scroll">
+          <div class="video-wrapper youtube-lazy" data-video-id="kuqpf4YPuds">
+            <img class="youtube-thumb" src="https://img.youtube.com/vi/kuqpf4YPuds/hqdefault.jpg" alt="머니투데이 티타임즈 - 테커 소개 영상" loading="lazy">
+            <button class="youtube-play-btn" aria-label="Play video">
+              <svg width="68" height="48" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="featured-video-info animate-on-scroll">
+          <span class="section-tag" data-i18n="ttimes.tag">머니투데이 · 티타임즈</span>
+          <h2 class="featured-video-title" data-i18n="ttimes.title">테커 소개 영상</h2>
+          <p class="featured-video-desc" data-i18n="ttimes.desc">
+            SKY 출신이 아니어도 전문성 있는 SW엔지니어로 성장하기 위한 코딩교육 플랫폼으로 성장하고 있습니다.
+          </p>
+          <p class="featured-video-cta-text" data-i18n="ttimes.cta.text">테커가 왜 생겨났는지 궁금하다면, 영상을 참고하세요!</p>
+          <a href="https://www.youtube.com/watch?v=kuqpf4YPuds" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--lg">
+            <span data-i18n="ttimes.btn">YouTube에서 보기</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs Section -->
+  <section class="programs section" id="programs">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag" data-i18n="programs.tag">Programs</span>
+        <h2 class="section-title" data-i18n="programs.title">테커 <span class="text-accent">활동 프로그램</span></h2>
+        <p class="section-desc" data-i18n="programs.desc">
+          5주 집중 SW부트캠프부터 실리콘밸리 한 달 살기까지 — 개발자 성장의 모든 것
+        </p>
+      </div>
+      <div class="programs-grid">
+        <div class="program-card animate-on-scroll">
+          <div class="program-card-number">01</div>
+          <div class="program-card-content">
+            <h3 class="program-card-title" data-i18n="programs.1.title">SW 부트캠프 (5주 집중)</h3>
+            <p class="program-card-desc" data-i18n="programs.1.desc">매년 2회 개설되는 5주간의 집중 온라인 부트캠프. 2020년부터 현재 11기까지 운영하며 1,000여 명의 수료생을 배출했습니다. 고성과자에 한해 테커 회원으로 선발됩니다.</p>
+            <ul class="program-card-tags">
+              <li>5주 집중</li>
+              <li>매년 2회</li>
+              <li>온라인</li>
+              <li>1000+ 수료생</li>
+            </ul>
+          </div>
+        </div>
+        <div class="program-card animate-on-scroll">
+          <div class="program-card-number">02</div>
+          <div class="program-card-content">
+            <h3 class="program-card-title" data-i18n="programs.2.title">팀별 프로젝트 & 스터디</h3>
+            <p class="program-card-desc" data-i18n="programs.2.desc">누구나 주제를 선정해 팀을 모집하여 활동할 수 있습니다. 코딩에 대한 열정이 넘치는 검증된 사람들과 완성도 높은 프로젝트 또는 스터디를 진행합니다.</p>
+            <ul class="program-card-tags">
+              <li>React</li>
+              <li>Spring Boot</li>
+              <li>TypeScript</li>
+              <li>코드 리뷰</li>
+            </ul>
+          </div>
+        </div>
+        <div class="program-card animate-on-scroll">
+          <div class="program-card-number">03</div>
+          <div class="program-card-content">
+            <h3 class="program-card-title" data-i18n="programs.3.title">해커톤</h3>
+            <p class="program-card-desc" data-i18n="programs.3.desc">무박 2일의 프로그램을 통해 참여자들에게 다양한 가능성을 제시하는 코딩 대회. 빠른 프로토타이핑과 발표 역량을 키웁니다.</p>
+            <ul class="program-card-tags">
+              <li>무박 2일</li>
+              <li>프로토타이핑</li>
+              <li>팀워크</li>
+              <li>발표</li>
+            </ul>
+          </div>
+        </div>
+        <div class="program-card animate-on-scroll">
+          <div class="program-card-number">04</div>
+          <div class="program-card-content">
+            <h3 class="program-card-title" data-i18n="programs.4.title">이력서 & 코딩 인터뷰 클리닉</h3>
+            <p class="program-card-desc" data-i18n="programs.4.desc">이력서 클리닉을 통해 실질적 취업에 도움을 주고, 코딩 인터뷰를 체계적으로 준비합니다. 코딩테스트, 이력서, 인터뷰를 완성합니다.</p>
+            <ul class="program-card-tags">
+              <li>이력서</li>
+              <li>포트폴리오</li>
+              <li>코딩테스트</li>
+              <li>기술 면접</li>
+            </ul>
+          </div>
+        </div>
+        <div class="program-card animate-on-scroll">
+          <div class="program-card-number">05</div>
+          <div class="program-card-content">
+            <h3 class="program-card-title" data-i18n="programs.5.title">실리콘밸리 한 달 살기</h3>
+            <p class="program-card-desc" data-i18n="programs.5.desc">2021년부터 매년 운영 중 (현재 9기수까지 운영). CES쇼 참관, 빅테크 기업 탐방, 현지 엔지니어 네트워킹, 부트캠프 병행 및 그룹 스터디를 진행합니다.</p>
+            <ul class="program-card-tags">
+              <li>CES</li>
+              <li>Apple</li>
+              <li>Google</li>
+              <li>네트워킹</li>
+            </ul>
+          </div>
+        </div>
+        <div class="program-card animate-on-scroll">
+          <div class="program-card-number">06</div>
+          <div class="program-card-content">
+            <h3 class="program-card-title" data-i18n="programs.6.title">실무 기반 기술 세션 & 24시간 줌</h3>
+            <p class="program-card-desc" data-i18n="programs.6.desc">온라인으로 진행되는 최신 실무 기반 기술 세션과, 모든 회원이 만날 수 있는 24시간 줌 운영. 정기 모임과 다양한 학교·회사의 개발자들과 소통합니다.</p>
+            <ul class="program-card-tags">
+              <li>기술 세션</li>
+              <li>24시간 줌</li>
+              <li>네트워킹</li>
+              <li>채용 공유</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Media / Press Section -->
+  <section class="media section" id="media">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag" data-i18n="media.tag">In The Press</span>
+        <h2 class="section-title" data-i18n="media.title">미디어에서 본 <span class="text-accent">Techeer</span></h2>
+        <p class="section-desc" data-i18n="media.desc">포춘코리아, 머니투데이 티타임즈 등 주요 매체에서 주목한 테커의 이야기</p>
+      </div>
+      <div class="media-grid">
+        <!-- Fortune Korea -->
+        <a href="https://www.fortunekorea.co.kr/news/articleView.html?idxno=39575" target="_blank" rel="noopener noreferrer" class="media-card media-card--featured animate-on-scroll">
+          <div class="media-card-badge">포춘코리아 VISION REPORT</div>
+          <div class="media-card-thumb">
+            <img src="https://cdn.fortunekorea.co.kr/news/thumbnail/202407/39575_30002_1033_v150.jpg" alt="포춘코리아 테커 기사">
+          </div>
+          <div class="media-card-content">
+            <h3 data-i18n="media.fortune.title">자발성을 설계하는 엔지니어</h3>
+            <p data-i18n="media.fortune.desc">"지방대에서 실리콘밸리까지. 박상현 대표는 자신의 커리어를 제자들도 재현할 수 있다고 믿었다. 기꺼이 경쟁하고 이기겠다는 호승심을, 그는 재생산하는 데 성공하고 있다."</p>
+            <span class="media-card-source" data-i18n="media.fortune.source">포춘코리아 디지털 뉴스 · 문상덕 기자</span>
+          </div>
+        </a>
+        <!-- TTimes Video -->
+        <div class="media-card animate-on-scroll media-card--video" data-video-id="kuqpf4YPuds">
+          <div class="media-card-badge">머니투데이 티타임즈</div>
+          <div class="media-card-thumb media-card-thumb--video">
+            <img src="https://i.ytimg.com/vi/kuqpf4YPuds/maxresdefault.jpg" alt="티타임즈 테커 소개 영상">
+            <div class="play-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="white"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </div>
+          </div>
+          <div class="media-card-content">
+            <h3 data-i18n="media.ttimes1.title">"저, 여러분은 생각도 못할 대학 출신입니다"</h3>
+            <p data-i18n="media.ttimes1.desc">SKY 출신이 아니어도 전문성 있는 SW엔지니어로 성장하기 위한 코딩교육 플랫폼. 테커가 왜 생겨났는지 궁금하다면!</p>
+            <span class="media-card-source">YouTube · 머니투데이 TTimes</span>
+          </div>
+        </div>
+        <!-- TTimes Interview -->
+        <div class="media-card animate-on-scroll media-card--video" data-video-id="sKMGiMBQ5DA">
+          <div class="media-card-badge">티타임즈 인터뷰</div>
+          <div class="media-card-thumb media-card-thumb--video">
+            <img src="https://i.ytimg.com/vi/sKMGiMBQ5DA/maxresdefault.jpg" alt="티타임즈 테커 인터뷰 2024">
+            <div class="play-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="white"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </div>
+          </div>
+          <div class="media-card-content">
+            <h3 data-i18n="media.ttimes2.title">테커 SW부트캠프 인터뷰 (2024 여름)</h3>
+            <p data-i18n="media.ttimes2.desc">실리콘밸리에서 직접 운영하는 코딩 성장 스쿨의 최신 인터뷰 영상</p>
+            <span class="media-card-source">YouTube · 티타임즈</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Journey / Growth Path Section -->
+  <section class="journey section" id="journey">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag" data-i18n="journey.tag">Growth Path</span>
+        <h2 class="section-title" data-i18n="journey.title">테커와 함께 <span class="text-accent">성장하기</span></h2>
+        <p class="section-desc" data-i18n="journey.desc">SW부트캠프에서 시작하여 전문 개발자로 성장하는 커리어 패스</p>
+      </div>
+      <div class="journey-timeline">
+        <div class="journey-step animate-on-scroll">
+          <div class="journey-step-marker"><span>1</span></div>
+          <div class="journey-step-content">
+            <h3 data-i18n="journey.1.title">SW부트캠프 참가</h3>
+            <p data-i18n="journey.1.desc">매년 2회 개설되는 5주간의 집중 온라인 부트캠프에 참가합니다. 소프트웨어 전문가로 성장할 수 있는 Intensive(집중적인) 경험을 제공합니다.</p>
+          </div>
+        </div>
+        <div class="journey-step animate-on-scroll">
+          <div class="journey-step-marker"><span>2</span></div>
+          <div class="journey-step-content">
+            <h3 data-i18n="journey.2.title">테커 회원 선발</h3>
+            <p data-i18n="journey.2.desc">고성과자에 대한 테커 참여 기회 제공. SW부트캠프 참가자에 한해 테커 회원으로 가입할 수 있습니다.</p>
+          </div>
+        </div>
+        <div class="journey-step animate-on-scroll">
+          <div class="journey-step-marker"><span>3</span></div>
+          <div class="journey-step-content">
+            <h3 data-i18n="journey.3.title">팀별 프로젝트 수행</h3>
+            <p data-i18n="journey.3.desc">테커 그룹 활동을 통한 팀별 프로젝트 수행 및 개발자 스펙 완성. 완성도 높은 포트폴리오를 만듭니다.</p>
+          </div>
+        </div>
+        <div class="journey-step animate-on-scroll">
+          <div class="journey-step-marker"><span>4</span></div>
+          <div class="journey-step-content">
+            <h3 data-i18n="journey.4.title">코딩테스트·이력서·인터뷰 완성</h3>
+            <p data-i18n="journey.4.desc">코딩테스트, 이력서, 인터뷰를 체계적으로 준비하여 취업을 위한 모든 역량을 갖춥니다.</p>
+          </div>
+        </div>
+        <div class="journey-step animate-on-scroll">
+          <div class="journey-step-marker"><span>5</span></div>
+          <div class="journey-step-content">
+            <h3 data-i18n="journey.5.title">"경력있는 신입" 완성</h3>
+            <p data-i18n="journey.5.desc">인턴쉽, 실리콘밸리 한달살기, 부트캠프 멘토 등의 경험을 통해 "경력있는 신입"으로 거듭납니다.</p>
+          </div>
+        </div>
+        <div class="journey-step animate-on-scroll">
+          <div class="journey-step-marker"><span>6</span></div>
+          <div class="journey-step-content">
+            <h3 data-i18n="journey.6.title">전문 개발자 취업 & 성장</h3>
+            <p data-i18n="journey.6.desc">전문 개발자로 취업과 함께 지속적인 자기개발, 리더쉽 성장을 경험합니다.</p>
+          </div>
+        </div>
+        <div class="journey-step animate-on-scroll">
+          <div class="journey-step-marker"><span>7</span></div>
+          <div class="journey-step-content">
+            <h3 data-i18n="journey.7.title">기업 현장실습 & 인턴 지원</h3>
+            <p data-i18n="journey.7.desc">기업들과 협업을 통한 현장실습, 인턴 지원. 기업은 일체의 Recruiting 비용 없이 검증된 테커 학생들을 채용할 수 있습니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Videos Section -->
+  <section class="videos section" id="videos">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag" data-i18n="videos.tag">Videos</span>
+        <h2 class="section-title" data-i18n="videos.title">부트캠프 <span class="text-accent">우수팀 발표 영상</span></h2>
+        <p class="section-desc" data-i18n="videos.desc">테커 SW부트캠프 수료생들의 실제 프로젝트 발표 영상을 확인하세요</p>
+      </div>
+      <div class="videos-grid">
+        <div class="video-card animate-on-scroll">
+          <div class="video-wrapper youtube-lazy" data-video-id="x8D3L5efegk">
+            <img class="youtube-thumb" src="https://img.youtube.com/vi/x8D3L5efegk/hqdefault.jpg" alt="11기 최우수팀 발표" loading="lazy">
+            <button class="youtube-play-btn" aria-label="Play video">
+              <svg width="68" height="48" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
+            </button>
+          </div>
+          <h3 class="video-title">11기 최우수팀 발표</h3>
+        </div>
+        <div class="video-card animate-on-scroll">
+          <div class="video-wrapper youtube-lazy" data-video-id="ExmYixVa0_Y">
+            <img class="youtube-thumb" src="https://img.youtube.com/vi/ExmYixVa0_Y/hqdefault.jpg" alt="11기 우수팀 발표" loading="lazy">
+            <button class="youtube-play-btn" aria-label="Play video">
+              <svg width="68" height="48" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
+            </button>
+          </div>
+          <h3 class="video-title">11기 우수팀 발표</h3>
+        </div>
+        <div class="video-card animate-on-scroll">
+          <div class="video-wrapper youtube-lazy" data-video-id="JO88nSvntlo">
+            <img class="youtube-thumb" src="https://img.youtube.com/vi/JO88nSvntlo/hqdefault.jpg" alt="11기 우수팀 발표" loading="lazy">
+            <button class="youtube-play-btn" aria-label="Play video">
+              <svg width="68" height="48" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
+            </button>
+          </div>
+          <h3 class="video-title">11기 우수팀 발표</h3>
+        </div>
+      </div>
+      <div class="videos-more animate-on-scroll">
+        <a href="https://www.techeerzip.cloud" target="_blank" rel="noopener noreferrer" class="btn btn--ghost btn--lg">
+          <span data-i18n="videos.btn">전체 프로젝트 보기 — techeerzip.cloud</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Model / Partners Section -->
+  <section class="edu-model section" id="edu-model">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag" data-i18n="edu.tag">Education Model</span>
+        <h2 class="section-title" data-i18n="edu.title">테커 단계별 <span class="text-accent">코딩 교육 모델</span></h2>
+        <p class="section-desc" data-i18n="edu.desc">테커 부트캠프는 소프트웨어 전문가로 성장할 수 있는 Intensive(집중적인) 경험을 제공을 목표로 설계되었습니다.</p>
+      </div>
+      <div class="edu-model-cards">
+        <div class="edu-model-card animate-on-scroll">
+          <div class="edu-model-card-header">
+            <span class="edu-model-step">Step 1</span>
+            <h3 data-i18n="edu.1.title">테커 파트너스</h3>
+          </div>
+          <p data-i18n="edu.1.desc">테커 SW부트캠프 사전 교육 성격의 <strong>전국대학 코딩 동아리</strong>로 테커 멘토단이 직접 운영합니다. 참가에 별도 제한이 없으며, 최소의 비용으로 학교에서 배울 수 없는 기본 기술 교육을 배우는 기회를 제공합니다.</p>
+          <ul>
+            <li>매년 2월과 8월에 참가 신청</li>
+            <li>부트캠프 전 4개월간 운영</li>
+            <li>참여문의: techeer@techeer.net</li>
+          </ul>
+        </div>
+        <div class="edu-model-card animate-on-scroll">
+          <div class="edu-model-card-header">
+            <span class="edu-model-step">Step 2</span>
+            <h3 data-i18n="edu.2.title">테커 SW부트캠프</h3>
+          </div>
+          <p data-i18n="edu.2.desc">매년 2회 개설되는 <strong>5주간의 집중 온라인 부트캠프</strong>. 다른 활동과 병행이 불가한 몰입형 프로그램으로 1,000여 명의 수료생을 배출했습니다.</p>
+          <ul>
+            <li>12기 프로그램: 2026년 6월 예정</li>
+            <li>고성과자 테커 회원 선발</li>
+            <li>프로젝트 목록: techeerzip.cloud</li>
+          </ul>
+        </div>
+        <div class="edu-model-card animate-on-scroll">
+          <div class="edu-model-card-header">
+            <span class="edu-model-step">Step 3</span>
+            <h3 data-i18n="edu.3.title">테커 그룹 활동</h3>
+          </div>
+          <p data-i18n="edu.3.desc">선발된 테커 회원으로서 팀 프로젝트, 스터디, 해커톤, 기술 세션, 코딩 인터뷰 클리닉 등 <strong>취업에 초점을 맞춘</strong> 다양한 활동을 진행합니다.</p>
+          <ul>
+            <li>회원 → 팀 리더 → 멘토 → 디렉터</li>
+            <li>리더십 성장 경험 제공</li>
+            <li>인턴쉽 & 실리콘밸리 한 달 살기</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Universities Section -->
+  <section class="universities section" id="universities">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag" data-i18n="uni.tag">Universities</span>
+        <h2 class="section-title" data-i18n="uni.title">참여학생 <span class="text-accent">대학</span></h2>
+        <p class="section-desc" data-i18n="uni.desc">국내외 총 34개 대학 출신 학생이 테커로 참여 중 (2025년 10월 기준)</p>
+      </div>
+      <div class="uni-grid animate-on-scroll">
+        <span class="uni-tag">서울대학교</span>
+        <span class="uni-tag">연세대학교</span>
+        <span class="uni-tag">고려대학교</span>
+        <span class="uni-tag">성균관대학교</span>
+        <span class="uni-tag">한양대학교</span>
+        <span class="uni-tag">경희대학교</span>
+        <span class="uni-tag">중앙대학교</span>
+        <span class="uni-tag">이화여자대학교</span>
+        <span class="uni-tag">건국대학교</span>
+        <span class="uni-tag">동국대학교</span>
+        <span class="uni-tag">국민대학교</span>
+        <span class="uni-tag">숭실대학교</span>
+        <span class="uni-tag">세종대학교</span>
+        <span class="uni-tag">인하대학교</span>
+        <span class="uni-tag">아주대학교</span>
+        <span class="uni-tag">충남대학교</span>
+        <span class="uni-tag">전북대학교</span>
+        <span class="uni-tag">부산대학교</span>
+        <span class="uni-tag">경북대학교</span>
+        <span class="uni-tag">울산대학교</span>
+        <span class="uni-tag">제주대학교</span>
+        <span class="uni-tag">한밭대학교</span>
+        <span class="uni-tag">순천향대학교</span>
+        <span class="uni-tag">한국외국어대학교</span>
+        <span class="uni-tag">광운대학교</span>
+        <span class="uni-tag">가천대학교</span>
+        <span class="uni-tag">상명대학교</span>
+        <span class="uni-tag">한신대학교</span>
+        <span class="uni-tag">UC Berkeley</span>
+        <span class="uni-tag">San Jose State Univ.</span>
+        <span class="uni-tag">외 4개 대학</span>
+      </div>
+      <p class="uni-note animate-on-scroll" data-i18n="uni.note">* 공식 테커 프로그램 지원 대학교 (1회 이상)</p>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section class="achievements section" id="achievements">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag" data-i18n="ach.tag">Achievements</span>
+        <h2 class="section-title" data-i18n="ach.title">테커 <span class="text-accent">성과</span></h2>
+        <p class="section-desc" data-i18n="ach.desc">
+          테커는 한국 내 기업과 손잡고 검증된 테커 학생들을 현장실습, 인턴 등으로 채용 지원합니다.<br>
+          테커는 일체의 채용 Recruiting 비용이 없습니다.
+        </p>
+      </div>
+      <h3 class="achievements-subtitle animate-on-scroll" data-i18n="ach.subtitle">부트캠프 수료생 취업 및 테커 멤버 입사 기업</h3>
+      <div class="company-grid animate-on-scroll">
+        <span class="company-tag company-tag--bold">삼성전자</span>
+        <span class="company-tag company-tag--bold">LG전자</span>
+        <span class="company-tag company-tag--bold">네이버</span>
+        <span class="company-tag company-tag--bold">카카오</span>
+        <span class="company-tag company-tag--bold">라인</span>
+        <span class="company-tag company-tag--bold">쿠팡</span>
+        <span class="company-tag company-tag--bold">배달의민족</span>
+        <span class="company-tag company-tag--bold">당근마켓</span>
+        <span class="company-tag company-tag--bold">토스</span>
+        <span class="company-tag company-tag--bold">컬리</span>
+        <span class="company-tag company-tag--bold">SK</span>
+        <span class="company-tag company-tag--bold">현대</span>
+        <span class="company-tag">NHN</span>
+        <span class="company-tag">하이퍼커넥트</span>
+        <span class="company-tag">야놀자</span>
+        <span class="company-tag">직방</span>
+        <span class="company-tag">버킷플레이스</span>
+        <span class="company-tag">소카</span>
+        <span class="company-tag">데브시스터즈</span>
+        <span class="company-tag">두나무</span>
+        <span class="company-tag">뱅크샐러드</span>
+        <span class="company-tag">마이리얼트립</span>
+        <span class="company-tag">리디</span>
+        <span class="company-tag">와디즈</span>
+      </div>
+      <p class="achievements-note animate-on-scroll" data-i18n="ach.note">Bold로 표시된 기업은 테커 멤버가 입사한 기업입니다. 협업 문의: techeer@techeer.net</p>
+    </div>
+  </section>
+
+  <!-- SV Living Section -->
+  <section class="sv-living section" id="sv-living">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag" data-i18n="sv.tag">Silicon Valley Living</span>
+        <h2 class="section-title" data-i18n="sv.title">실리콘밸리 <span class="text-accent">한 달 살기</span></h2>
+        <p class="section-desc" data-i18n="sv.desc">2021년부터 매년 운영, 현재 9기수까지 완료</p>
+      </div>
+      <div class="sv-living-layout">
+        <div class="sv-living-video animate-on-scroll">
+          <div class="video-wrapper youtube-lazy" data-video-id="1U3nYKvgZws">
+            <img class="youtube-thumb" src="https://img.youtube.com/vi/1U3nYKvgZws/hqdefault.jpg" alt="실리콘밸리 한 달 살기" loading="lazy">
+            <button class="youtube-play-btn" aria-label="Play video">
+              <svg width="68" height="48" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="sv-living-info animate-on-scroll">
+          <div class="sv-living-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-i18n="sv.item1">미국 Las Vegas 전세계 최대가전 CES쇼 참관</span>
+          </div>
+          <div class="sv-living-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+            <span data-i18n="sv.item2">실리콘밸리 빅테크 기업 탐방 (Apple, Google 등)</span>
+          </div>
+          <div class="sv-living-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span data-i18n="sv.item3">현지 엔지니어들과 네트워킹</span>
+          </div>
+          <div class="sv-living-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            <span data-i18n="sv.item4">테커 부트캠프 참여 병행 및 그룹스터디 진행</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="team section" id="team">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag" data-i18n="team.tag">Team</span>
+        <h2 class="section-title" data-i18n="team.title">테커 <span class="text-accent">운영진</span></h2>
+        <p class="section-desc" data-i18n="team.desc">
+          Techeer와 테커 SW부트캠프는 미국 캘리포니아, 실리콘밸리에 LLC로<br>
+          정식 등록된 코딩교육기업으로 미국에서 모든 운영을 주관합니다.
+        </p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card animate-on-scroll">
+          <div class="team-avatar">AP</div>
+          <div class="team-role" data-i18n="team.1.role">대표 멘토</div>
+          <h3 class="team-name">Andrew Park</h3>
+          <p class="team-desc" data-i18n="team.1.desc">미국 실리콘밸리에서 엔지니어로 일하고 있으며 테커를 설립하고 운영하는 대표 운영자. 삼성SDS → 삼성전자 미주법인 → 링크드인 → 팔로알토 네트웍스 수석 엔지니어</p>
+        </div>
+        <div class="team-card animate-on-scroll">
+          <div class="team-avatar">K</div>
+          <div class="team-role" data-i18n="team.2.role">디렉터</div>
+          <h3 class="team-name">Kevin</h3>
+          <p class="team-desc" data-i18n="team.2.desc">Toss · 테커 2기 출신. 테커 부트캠프 및 그룹 활동의 전반적인 운영을 지원하는 디렉터.</p>
+        </div>
+        <div class="team-card animate-on-scroll">
+          <div class="team-avatar-group">
+            <span>M</span><span>M</span><span>M</span>
+          </div>
+          <div class="team-role" data-i18n="team.3.role">멘토단</div>
+          <h3 class="team-name" data-i18n="team.3.name">테커 멘토단</h3>
+          <p class="team-desc" data-i18n="team.3.desc">실리콘밸리 현직 엔지니어 및 테커 시니어 멤버들로 구성된 멘토단. 코드 리뷰, 기술 세션, 커리어 상담을 진행합니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sponsors Section -->
+  <section class="sponsors section" id="sponsors">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag" data-i18n="sponsors.tag">Sponsors</span>
+        <h2 class="section-title" data-i18n="sponsors.title">테커 <span class="text-accent">후원사</span></h2>
+        <p class="section-desc" data-i18n="sponsors.desc">테커의 비전에 공감하고 함께 성장을 지원하는 파트너 기업들</p>
+      </div>
+      <div class="sponsor-grid animate-on-scroll">
+        <div class="sponsor-card"><img src="assets/sponsors/sponsor-1.png" alt="Sponsor" loading="lazy"></div>
+        <div class="sponsor-card"><img src="assets/sponsors/sponsor-2.png" alt="Sponsor" loading="lazy"></div>
+        <div class="sponsor-card"><img src="assets/sponsors/sponsor-3.png" alt="Sponsor" loading="lazy"></div>
+        <div class="sponsor-card"><img src="assets/sponsors/sponsor-4.png" alt="Sponsor" loading="lazy"></div>
+        <div class="sponsor-card"><img src="assets/sponsors/sponsor-5.png" alt="Sponsor" loading="lazy"></div>
+        <div class="sponsor-card"><img src="assets/sponsors/sponsor-6.png" alt="Sponsor" loading="lazy"></div>
+        <div class="sponsor-card"><img src="assets/sponsors/sponsor-7.png" alt="Sponsor" loading="lazy"></div>
+        <div class="sponsor-card"><img src="assets/sponsors/sponsor-8.png" alt="Sponsor" loading="lazy"></div>
+        <div class="sponsor-card"><img src="assets/sponsors/sponsor-9.png" alt="Sponsor" loading="lazy"></div>
+        <div class="sponsor-card"><img src="assets/sponsors/sponsor-10.png" alt="Sponsor" loading="lazy"></div>
+        <div class="sponsor-card"><img src="assets/sponsors/sponsor-11.png" alt="Sponsor" loading="lazy"></div>
+      </div>
+      <p class="sponsor-note animate-on-scroll" data-i18n="sponsors.note">후원사 로고는 기업과의 협약에 따라 게재됩니다. 후원 문의: techeer@techeer.net</p>
+    </div>
+  </section>
+
+  <!-- Goods Section -->
+  <section class="goods section" id="goods">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag" data-i18n="goods.tag">Goods</span>
+        <h2 class="section-title" data-i18n="goods.title">테커 <span class="text-accent">굿즈</span></h2>
+        <p class="section-desc" data-i18n="goods.desc">년 2회 테커 굿즈를 제작하여 회원들에게 제공합니다</p>
+      </div>
+      <div class="goods-grid">
+        <div class="goods-card animate-on-scroll">
+          <div class="goods-card-img">
+            <img src="assets/goods/goal-studio-hoodie.jpg" alt="Goal Studio 후드" loading="lazy">
+          </div>
+          <h3 class="goods-card-title" data-i18n="goods.1.title">Goal Studio 후드</h3>
+          <p class="goods-card-desc" data-i18n="goods.1.desc">Goal Studio와 콜라보한 프리미엄 테커 후드티</p>
+        </div>
+        <div class="goods-card animate-on-scroll">
+          <div class="goods-card-img">
+            <img src="assets/goods/goal-studio-tshirt.png" alt="Goal Studio 티셔츠" loading="lazy">
+          </div>
+          <h3 class="goods-card-title" data-i18n="goods.2.title">Goal Studio 티셔츠</h3>
+          <p class="goods-card-desc" data-i18n="goods.2.desc">Goal Studio와 콜라보한 테커 공식 티셔츠</p>
+        </div>
+        <div class="goods-card animate-on-scroll">
+          <div class="goods-card-img">
+            <img src="assets/goods/techeer-hoodie.jpg" alt="테커 후드" loading="lazy">
+          </div>
+          <h3 class="goods-card-title" data-i18n="goods.3.title">테커 후드</h3>
+          <p class="goods-card-desc" data-i18n="goods.3.desc">테커 로고가 새겨진 시그니처 후드티</p>
+        </div>
+        <div class="goods-card animate-on-scroll">
+          <div class="goods-card-img">
+            <img src="assets/goods/tumbler.jpg" alt="텀블러" loading="lazy">
+          </div>
+          <h3 class="goods-card-title" data-i18n="goods.4.title">텀블러</h3>
+          <p class="goods-card-desc" data-i18n="goods.4.desc">테커 로고 텀블러 — 코딩할 때 필수 아이템</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section class="events section" id="events">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag" data-i18n="events.tag">Events</span>
+        <h2 class="section-title" data-i18n="events.title">테커 <span class="text-accent">이벤트</span></h2>
+        <p class="section-desc" data-i18n="events.desc">해커톤, 테커 파티 등 다양한 오프라인·온라인 이벤트를 운영합니다</p>
+      </div>
+      <div class="events-grid">
+        <div class="event-card animate-on-scroll">
+          <div class="event-card-photos">
+            <img src="assets/events/hackathon-2023.png" alt="2023년 해커톤" loading="lazy">
+            <img src="assets/events/hackathon-2024.jpg" alt="2024년 해커톤" loading="lazy">
+          </div>
+          <div class="event-card-body">
+            <div class="event-card-header">
+              <div class="event-card-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <h3 class="event-card-title" data-i18n="events.hackathon.title">해커톤</h3>
+            </div>
+            <p class="event-card-desc" data-i18n="events.hackathon.desc">무박 2일의 프로그램을 통해 참여자들로 하여금 다양한 가능성을 제시하는 코딩 대회. 빠른 프로토타이핑, 팀워크, 발표 역량을 키웁니다.</p>
+            <div class="event-card-years">
+              <span class="event-year-badge">2023</span>
+              <span class="event-year-badge">2024</span>
+            </div>
+            <a href="https://www.instagram.com/techeer_in_sv/" target="_blank" rel="noopener noreferrer" class="event-card-link">
+              <span data-i18n="events.hackathon.link">인스타그램에서 사진 보기</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="event-card animate-on-scroll">
+          <div class="event-card-photos">
+            <img src="assets/events/party-2024.png" alt="2024년 테커파티" loading="lazy">
+            <img src="assets/events/party-2023.jpg" alt="2023년 테커파티" loading="lazy">
+            <img src="assets/events/party-2022.png" alt="2022년 테커파티" loading="lazy">
+          </div>
+          <div class="event-card-body">
+            <div class="event-card-header">
+              <div class="event-card-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v4M3 5h4M6 17v4M4 19h4M13 3l2 4 4 1-3 3 1 4-4-2-4 2 1-4-3-3 4-1z"/></svg>
+              </div>
+              <h3 class="event-card-title" data-i18n="events.party.title">테커 파티</h3>
+            </div>
+            <p class="event-card-desc" data-i18n="events.party.desc">매년 11월에 테커 회원을 위한 연말 성과 파티. 한 해의 성장을 축하하고, 회원들 간 네트워킹을 즐기는 시간입니다.</p>
+            <div class="event-card-years">
+              <span class="event-year-badge">2022</span>
+              <span class="event-year-badge">2023</span>
+              <span class="event-year-badge">2024</span>
+            </div>
+            <a href="https://www.instagram.com/techeer_in_sv/" target="_blank" rel="noopener noreferrer" class="event-card-link">
+              <span data-i18n="events.party.link">인스타그램에서 사진 보기</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instagram / Social Section -->
+  <section class="social section" id="social">
+    <div class="container">
+      <div class="social-card animate-on-scroll">
+        <div class="social-content">
+          <h2 class="social-title" data-i18n="social.title">더 많은 활동과 성과는<br><span class="text-accent">인스타그램</span>에서 확인하세요</h2>
+          <p class="social-desc" data-i18n="social.desc">테커 파티, 굿즈, 실리콘밸리 한 달 살기, 해커톤 현장 등 다양한 모습을 만나보세요.</p>
+          <a href="https://www.instagram.com/techeer_in_sv/" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--lg">
+            <span data-i18n="social.btn">@techeer_in_sv 팔로우</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / Contact Section -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-card animate-on-scroll">
+        <div class="contact-bg-pattern"></div>
+        <div class="contact-content">
+          <span class="section-tag section-tag--light" data-i18n="contact.tag">Contact</span>
+          <h2 class="contact-title" data-i18n="contact.title">다음 기수의 주인공은<br><span>바로 당신입니다</span></h2>
+          <p class="contact-desc" data-i18n="contact.desc">
+            개발 경험이 없어도 괜찮습니다.<br>
+            배우고 싶은 열정과 함께 성장할 의지만 있다면, Techeer가 함께합니다.
+          </p>
+          <div class="contact-form">
+            <a href="mailto:techeer@techeer.net" class="btn btn--white btn--lg">
+              <span data-i18n="contact.btn1">문의하기</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <a href="https://github.com/techeer-sv" target="_blank" rel="noopener noreferrer" class="btn btn--outline-white btn--lg">
+              <span data-i18n="contact.btn2">GitHub 방문하기</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/techeer-logo.png" alt="Techeer" class="footer-logo-img">
+          <p class="footer-tagline" data-i18n="footer.tagline">Technology + Career<br>실리콘밸리에서 시작하는 개발자의 여정</p>
+        </div>
+        <div class="footer-links-grid">
+          <div class="footer-col">
+            <h4 data-i18n="footer.programs">프로그램</h4>
+            <a href="#programs" data-i18n="footer.programs.1">팀 프로젝트</a>
+            <a href="#programs" data-i18n="footer.programs.2">해커톤</a>
+            <a href="#programs" data-i18n="footer.programs.3">스터디</a>
+            <a href="#programs" data-i18n="footer.programs.4">취업 준비</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.community">커뮤니티</h4>
+            <a href="https://github.com/techeer-sv" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.instagram.com/techeer_in_sv/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://blog.techeer.net" target="_blank" rel="noopener noreferrer">Tech Blog</a>
+            <a href="https://techeer-school.notion.site/Techeer-2fad626a07494b91aaa1a1def5ab4c15" target="_blank" rel="noopener noreferrer">Notion</a>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.links">바로가기</h4>
+            <a href="#about" data-i18n="footer.links.about">소개</a>
+            <a href="#media" data-i18n="footer.links.media">미디어</a>
+            <a href="#videos" data-i18n="footer.links.videos">영상</a>
+            <a href="https://www.techeerzip.cloud" target="_blank" rel="noopener noreferrer" data-i18n="footer.links.projects">프로젝트 모음</a>
+            <a href="mailto:techeer@techeer.net" data-i18n="footer.links.contact">문의: techeer@techeer.net</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Techeer LLC. All rights reserved.</p>
+        <p>Silicon Valley, California, United States of America</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Contact Modal -->
+  <div class="modal-overlay" id="contactModal">
+    <div class="modal">
+      <button class="modal-close" id="modalClose" aria-label="Close">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <h2 class="modal-title" data-i18n="modal.title">문의하기</h2>
+      <p class="modal-desc" data-i18n="modal.desc">아래 양식을 작성해 주시면 빠른 시일 내에 답변 드리겠습니다.</p>
+      <form class="modal-form" id="contactForm">
+        <div class="form-group">
+          <label for="formName" data-i18n="modal.name.label">이름</label>
+          <input type="text" id="formName" name="name" required placeholder="" data-i18n-placeholder="modal.name.placeholder">
+        </div>
+        <div class="form-group">
+          <label for="formEmail" data-i18n="modal.email.label">이메일</label>
+          <input type="email" id="formEmail" name="email" required placeholder="" data-i18n-placeholder="modal.email.placeholder">
+        </div>
+        <div class="form-group">
+          <label for="formPhone" data-i18n="modal.phone.label">전화번호</label>
+          <input type="tel" id="formPhone" name="phone" placeholder="" data-i18n-placeholder="modal.phone.placeholder">
+        </div>
+        <div class="form-group">
+          <label for="formMessage" data-i18n="modal.message.label">메시지</label>
+          <textarea id="formMessage" name="message" rows="4" required placeholder="" data-i18n-placeholder="modal.message.placeholder"></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--lg modal-submit">
+          <span data-i18n="modal.submit">보내기</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+      </form>
+      <div class="modal-success" id="modalSuccess">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <h3 data-i18n="modal.success.title">전송 완료!</h3>
+        <p data-i18n="modal.success.desc">메시지가 성공적으로 전송되었습니다. 빠른 시일 내에 답변 드리겠습니다.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Video Popup Modal -->
+  <div class="video-modal-overlay" id="videoModal">
+    <button class="video-modal-close" id="videoModalClose" aria-label="Close">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="video-modal-content">
+      <div class="video-modal-wrapper" id="videoModalWrapper"></div>
+    </div>
+  </div>
+
+  <!-- Image Lightbox -->
+  <div class="lightbox-overlay" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+    <div class="lightbox-content">
+      <img id="lightboxImg" src="" alt="">
+    </div>
+    <div class="lightbox-counter" id="lightboxCounter"></div>
+  </div>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
