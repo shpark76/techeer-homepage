@@ -397,6 +397,11 @@ document.addEventListener('DOMContentLoaded', () => {
     img.addEventListener('click', () => openLightbox([img.src], 0));
   });
 
+  // Make Instagram preview image clickable in lightbox
+  document.querySelectorAll('.social-instagram-preview img').forEach(img => {
+    img.addEventListener('click', () => openLightbox([img.src], 0));
+  });
+
   // --- Active nav link highlighting ---
   const sections = document.querySelectorAll('.section, .hero');
   const navLinksArr = document.querySelectorAll('.nav-link:not(.nav-link--cta)');
