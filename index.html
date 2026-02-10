@@ -76,18 +76,18 @@
         </div>
         <div class="stat-divider"></div>
         <div class="stat">
-          <span class="stat-number" data-count="11">0</span><span class="stat-plus">기</span>
+          <span class="stat-number" data-count="11">0</span><span class="stat-plus" data-i18n="hero.stat2.suffix">기</span>
           <span class="stat-label" data-i18n="hero.stat2.label">부트캠프 운영</span>
         </div>
         <div class="stat-divider"></div>
         <div class="stat">
-          <span class="stat-number" data-count="34">0</span><span class="stat-plus">개</span>
+          <span class="stat-number" data-count="34">0</span><span class="stat-plus" data-i18n="hero.stat3.suffix">개</span>
           <span class="stat-label" data-i18n="hero.stat3.label">참여 대학</span>
         </div>
       </div>
     </div>
     <div class="hero-scroll">
-      <span>스크롤</span>
+      <span data-i18n="hero.scroll">스크롤</span>
       <div class="hero-scroll-line"></div>
     </div>
   </section>
@@ -117,6 +117,8 @@
       </div>
     </div>
   </section>
+
+  <!-- ============ PHASE 1: 이게 뭐지? (소개 & 신뢰) ============ -->
 
   <!-- About Section -->
   <section class="about section" id="about">
@@ -161,8 +163,8 @@
     <div class="container">
       <div class="featured-video-layout">
         <div class="featured-video-embed animate-on-scroll">
-          <div class="video-wrapper youtube-lazy" data-video-id="kuqpf4YPuds">
-            <img class="youtube-thumb" src="https://img.youtube.com/vi/kuqpf4YPuds/hqdefault.jpg" alt="머니투데이 티타임즈 - 테커 소개 영상" loading="lazy">
+          <div class="video-wrapper youtube-lazy" data-video-id="rTgnPSW3-IU" data-video-start="60">
+            <img class="youtube-thumb" src="https://img.youtube.com/vi/rTgnPSW3-IU/hqdefault.jpg" alt="머니투데이 티타임즈 - 테커 소개 영상" loading="lazy">
             <button class="youtube-play-btn" aria-label="Play video">
               <svg width="68" height="48" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
             </button>
@@ -175,7 +177,7 @@
             SKY 출신이 아니어도 전문성 있는 SW엔지니어로 성장하기 위한 코딩교육 플랫폼으로 성장하고 있습니다.
           </p>
           <p class="featured-video-cta-text" data-i18n="ttimes.cta.text">테커가 왜 생겨났는지 궁금하다면, 영상을 참고하세요!</p>
-          <a href="https://www.youtube.com/watch?v=kuqpf4YPuds" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--lg">
+          <a href="https://www.youtube.com/watch?v=rTgnPSW3-IU&t=60s" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--lg">
             <span data-i18n="ttimes.btn">YouTube에서 보기</span>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
           </a>
@@ -184,98 +186,7 @@
     </div>
   </section>
 
-  <!-- Programs Section -->
-  <section class="programs section" id="programs">
-    <div class="container">
-      <div class="section-header animate-on-scroll">
-        <span class="section-tag" data-i18n="programs.tag">Programs</span>
-        <h2 class="section-title" data-i18n="programs.title">테커 <span class="text-accent">활동 프로그램</span></h2>
-        <p class="section-desc" data-i18n="programs.desc">
-          5주 집중 SW부트캠프부터 실리콘밸리 한 달 살기까지 — 개발자 성장의 모든 것
-        </p>
-      </div>
-      <div class="programs-grid">
-        <div class="program-card animate-on-scroll">
-          <div class="program-card-number">01</div>
-          <div class="program-card-content">
-            <h3 class="program-card-title" data-i18n="programs.1.title">SW 부트캠프 (5주 집중)</h3>
-            <p class="program-card-desc" data-i18n="programs.1.desc">매년 2회 개설되는 5주간의 집중 온라인 부트캠프. 2020년부터 현재 11기까지 운영하며 1,000여 명의 수료생을 배출했습니다. 고성과자에 한해 테커 회원으로 선발됩니다.</p>
-            <ul class="program-card-tags">
-              <li>5주 집중</li>
-              <li>매년 2회</li>
-              <li>온라인</li>
-              <li>1000+ 수료생</li>
-            </ul>
-          </div>
-        </div>
-        <div class="program-card animate-on-scroll">
-          <div class="program-card-number">02</div>
-          <div class="program-card-content">
-            <h3 class="program-card-title" data-i18n="programs.2.title">팀별 프로젝트 & 스터디</h3>
-            <p class="program-card-desc" data-i18n="programs.2.desc">누구나 주제를 선정해 팀을 모집하여 활동할 수 있습니다. 코딩에 대한 열정이 넘치는 검증된 사람들과 완성도 높은 프로젝트 또는 스터디를 진행합니다.</p>
-            <ul class="program-card-tags">
-              <li>React</li>
-              <li>Spring Boot</li>
-              <li>TypeScript</li>
-              <li>코드 리뷰</li>
-            </ul>
-          </div>
-        </div>
-        <div class="program-card animate-on-scroll">
-          <div class="program-card-number">03</div>
-          <div class="program-card-content">
-            <h3 class="program-card-title" data-i18n="programs.3.title">해커톤</h3>
-            <p class="program-card-desc" data-i18n="programs.3.desc">무박 2일의 프로그램을 통해 참여자들에게 다양한 가능성을 제시하는 코딩 대회. 빠른 프로토타이핑과 발표 역량을 키웁니다.</p>
-            <ul class="program-card-tags">
-              <li>무박 2일</li>
-              <li>프로토타이핑</li>
-              <li>팀워크</li>
-              <li>발표</li>
-            </ul>
-          </div>
-        </div>
-        <div class="program-card animate-on-scroll">
-          <div class="program-card-number">04</div>
-          <div class="program-card-content">
-            <h3 class="program-card-title" data-i18n="programs.4.title">이력서 & 코딩 인터뷰 클리닉</h3>
-            <p class="program-card-desc" data-i18n="programs.4.desc">이력서 클리닉을 통해 실질적 취업에 도움을 주고, 코딩 인터뷰를 체계적으로 준비합니다. 코딩테스트, 이력서, 인터뷰를 완성합니다.</p>
-            <ul class="program-card-tags">
-              <li>이력서</li>
-              <li>포트폴리오</li>
-              <li>코딩테스트</li>
-              <li>기술 면접</li>
-            </ul>
-          </div>
-        </div>
-        <div class="program-card animate-on-scroll">
-          <div class="program-card-number">05</div>
-          <div class="program-card-content">
-            <h3 class="program-card-title" data-i18n="programs.5.title">실리콘밸리 한 달 살기</h3>
-            <p class="program-card-desc" data-i18n="programs.5.desc">2021년부터 매년 운영 중 (현재 9기수까지 운영). CES쇼 참관, 빅테크 기업 탐방, 현지 엔지니어 네트워킹, 부트캠프 병행 및 그룹 스터디를 진행합니다.</p>
-            <ul class="program-card-tags">
-              <li>CES</li>
-              <li>Apple</li>
-              <li>Google</li>
-              <li>네트워킹</li>
-            </ul>
-          </div>
-        </div>
-        <div class="program-card animate-on-scroll">
-          <div class="program-card-number">06</div>
-          <div class="program-card-content">
-            <h3 class="program-card-title" data-i18n="programs.6.title">실무 기반 기술 세션 & 24시간 줌</h3>
-            <p class="program-card-desc" data-i18n="programs.6.desc">온라인으로 진행되는 최신 실무 기반 기술 세션과, 모든 회원이 만날 수 있는 24시간 줌 운영. 정기 모임과 다양한 학교·회사의 개발자들과 소통합니다.</p>
-            <ul class="program-card-tags">
-              <li>기술 세션</li>
-              <li>24시간 줌</li>
-              <li>네트워킹</li>
-              <li>채용 공유</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- ============ PHASE 1.5: 미디어 신뢰 ============ -->
 
   <!-- Media / Press Section -->
   <section class="media section" id="media">
@@ -326,6 +237,119 @@
             <h3 data-i18n="media.ttimes2.title">테커 SW부트캠프 인터뷰 (2024 여름)</h3>
             <p data-i18n="media.ttimes2.desc">실리콘밸리에서 직접 운영하는 코딩 성장 스쿨의 최신 인터뷰 영상</p>
             <span class="media-card-source">YouTube · 티타임즈</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PHASE 2: 뭘 하게 되지? (프로그램 & 커리큘럼) ============ -->
+
+  <!-- Programs Section -->
+  <section class="programs section" id="programs">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag" data-i18n="programs.tag">Programs</span>
+        <h2 class="section-title" data-i18n="programs.title">테커 <span class="text-accent">활동 프로그램</span></h2>
+        <p class="section-desc" data-i18n="programs.desc">
+          5주 집중 SW부트캠프부터 실리콘밸리 한 달 살기까지 — 개발자 성장의 모든 것
+        </p>
+      </div>
+      <div class="programs-grid">
+        <div class="program-card animate-on-scroll">
+          <div class="program-card-number">01</div>
+          <div class="program-card-content">
+            <h3 class="program-card-title" data-i18n="programs.1.title">SW 부트캠프 (5주 집중)</h3>
+            <p class="program-card-desc" data-i18n="programs.1.desc">매년 2회 개설되는 5주간의 집중 온라인 부트캠프. 2020년부터 현재 11기까지 운영하며 1,000여 명의 수료생을 배출했습니다. 고성과자에 한해 테커 회원으로 선발됩니다.</p>
+            <ul class="program-card-tags">
+              <li>5주 집중</li>
+              <li>매년 2회</li>
+              <li>온라인</li>
+              <li>1000+ 수료생</li>
+            </ul>
+          </div>
+        </div>
+        <div class="program-card animate-on-scroll">
+          <div class="program-card-number">02</div>
+          <div class="program-card-content">
+            <h3 class="program-card-title" data-i18n="programs.2.title">팀별 프로젝트 & 스터디</h3>
+            <p class="program-card-desc" data-i18n="programs.2.desc">누구나 주제를 선정해 팀을 모집하여 활동할 수 있습니다. 프론트엔드·백엔드·인프라·AI 등 실무 직무별 역할을 나누어 실제 서비스 수준의 프로젝트를 진행하고, 코드 리뷰와 Git 협업을 통해 현업 개발 문화를 체득합니다.</p>
+            <ul class="program-card-tags">
+              <!-- Frontend -->
+              <li>React</li>
+              <li>Next.js</li>
+              <li>TypeScript</li>
+              <!-- Backend -->
+              <li>Spring Boot</li>
+              <li>Node.js</li>
+              <li>NestJS</li>
+              <li>FastAPI</li>
+              <!-- Infra / DevOps -->
+              <li>Docker</li>
+              <li>AWS</li>
+              <li>CI/CD</li>
+              <!-- AI / Data -->
+              <li>Python</li>
+              <li>AI/LLM</li>
+              <!-- Mobile -->
+              <li>Flutter</li>
+              <li>Kotlin</li>
+              <!-- Practices -->
+              <li>코드 리뷰</li>
+              <li>Git 협업</li>
+            </ul>
+          </div>
+        </div>
+        <div class="program-card animate-on-scroll">
+          <div class="program-card-number">03</div>
+          <div class="program-card-content">
+            <h3 class="program-card-title" data-i18n="programs.3.title">해커톤</h3>
+            <p class="program-card-desc" data-i18n="programs.3.desc">무박 2일의 프로그램을 통해 참여자들에게 다양한 가능성을 제시하는 코딩 대회. 빠른 프로토타이핑과 발표 역량을 키웁니다.</p>
+            <ul class="program-card-tags">
+              <li>무박 2일</li>
+              <li>프로토타이핑</li>
+              <li>팀워크</li>
+              <li>발표</li>
+            </ul>
+          </div>
+        </div>
+        <div class="program-card animate-on-scroll">
+          <div class="program-card-number">04</div>
+          <div class="program-card-content">
+            <h3 class="program-card-title" data-i18n="programs.4.title">이력서 & 코딩 인터뷰 클리닉</h3>
+            <p class="program-card-desc" data-i18n="programs.4.desc">이력서 클리닉을 통해 실질적 취업에 도움을 주고, 코딩 인터뷰를 체계적으로 준비합니다. 코딩테스트, 이력서, 인터뷰를 완성합니다.</p>
+            <ul class="program-card-tags">
+              <li>이력서</li>
+              <li>포트폴리오</li>
+              <li>코딩테스트</li>
+              <li>기술 면접</li>
+            </ul>
+          </div>
+        </div>
+        <div class="program-card animate-on-scroll">
+          <div class="program-card-number">05</div>
+          <div class="program-card-content">
+            <h3 class="program-card-title" data-i18n="programs.5.title">실리콘밸리 한 달 살기</h3>
+            <p class="program-card-desc" data-i18n="programs.5.desc">2021년부터 매년 운영 중 (현재 10기수까지 완료). CES쇼 참관, 빅테크 기업 탐방, 현지 엔지니어 네트워킹, 부트캠프 병행 및 그룹 스터디를 진행합니다.</p>
+            <ul class="program-card-tags">
+              <li>CES</li>
+              <li>Apple</li>
+              <li>Google</li>
+              <li>네트워킹</li>
+            </ul>
+          </div>
+        </div>
+        <div class="program-card animate-on-scroll">
+          <div class="program-card-number">06</div>
+          <div class="program-card-content">
+            <h3 class="program-card-title" data-i18n="programs.6.title">실무 기반 기술 세션 & 24시간 줌</h3>
+            <p class="program-card-desc" data-i18n="programs.6.desc">온라인으로 진행되는 최신 실무 기반 기술 세션과, 모든 회원이 만날 수 있는 24시간 줌 운영. 정기 모임과 다양한 학교·회사의 개발자들과 소통합니다.</p>
+            <ul class="program-card-tags">
+              <li>기술 세션</li>
+              <li>24시간 줌</li>
+              <li>네트워킹</li>
+              <li>채용 공유</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -394,52 +418,6 @@
     </div>
   </section>
 
-  <!-- Videos Section -->
-  <section class="videos section" id="videos">
-    <div class="container">
-      <div class="section-header animate-on-scroll">
-        <span class="section-tag" data-i18n="videos.tag">Videos</span>
-        <h2 class="section-title" data-i18n="videos.title">부트캠프 <span class="text-accent">우수팀 발표 영상</span></h2>
-        <p class="section-desc" data-i18n="videos.desc">테커 SW부트캠프 수료생들의 실제 프로젝트 발표 영상을 확인하세요</p>
-      </div>
-      <div class="videos-grid">
-        <div class="video-card animate-on-scroll">
-          <div class="video-wrapper youtube-lazy" data-video-id="x8D3L5efegk">
-            <img class="youtube-thumb" src="https://img.youtube.com/vi/x8D3L5efegk/hqdefault.jpg" alt="11기 최우수팀 발표" loading="lazy">
-            <button class="youtube-play-btn" aria-label="Play video">
-              <svg width="68" height="48" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
-            </button>
-          </div>
-          <h3 class="video-title">11기 최우수팀 발표</h3>
-        </div>
-        <div class="video-card animate-on-scroll">
-          <div class="video-wrapper youtube-lazy" data-video-id="ExmYixVa0_Y">
-            <img class="youtube-thumb" src="https://img.youtube.com/vi/ExmYixVa0_Y/hqdefault.jpg" alt="11기 우수팀 발표" loading="lazy">
-            <button class="youtube-play-btn" aria-label="Play video">
-              <svg width="68" height="48" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
-            </button>
-          </div>
-          <h3 class="video-title">11기 우수팀 발표</h3>
-        </div>
-        <div class="video-card animate-on-scroll">
-          <div class="video-wrapper youtube-lazy" data-video-id="JO88nSvntlo">
-            <img class="youtube-thumb" src="https://img.youtube.com/vi/JO88nSvntlo/hqdefault.jpg" alt="11기 우수팀 발표" loading="lazy">
-            <button class="youtube-play-btn" aria-label="Play video">
-              <svg width="68" height="48" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
-            </button>
-          </div>
-          <h3 class="video-title">11기 우수팀 발표</h3>
-        </div>
-      </div>
-      <div class="videos-more animate-on-scroll">
-        <a href="https://www.techeerzip.cloud" target="_blank" rel="noopener noreferrer" class="btn btn--ghost btn--lg">
-          <span data-i18n="videos.btn">전체 프로젝트 보기 — techeerzip.cloud</span>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-        </a>
-      </div>
-    </div>
-  </section>
-
   <!-- Education Model / Partners Section -->
   <section class="edu-model section" id="edu-model">
     <div class="container">
@@ -448,44 +426,181 @@
         <h2 class="section-title" data-i18n="edu.title">테커 단계별 <span class="text-accent">코딩 교육 모델</span></h2>
         <p class="section-desc" data-i18n="edu.desc">테커 부트캠프는 소프트웨어 전문가로 성장할 수 있는 Intensive(집중적인) 경험을 제공을 목표로 설계되었습니다.</p>
       </div>
-      <div class="edu-model-cards">
-        <div class="edu-model-card animate-on-scroll">
-          <div class="edu-model-card-header">
-            <span class="edu-model-step">Step 1</span>
-            <h3 data-i18n="edu.1.title">테커 파트너스</h3>
-          </div>
-          <p data-i18n="edu.1.desc">테커 SW부트캠프 사전 교육 성격의 <strong>전국대학 코딩 동아리</strong>로 테커 멘토단이 직접 운영합니다. 참가에 별도 제한이 없으며, 최소의 비용으로 학교에서 배울 수 없는 기본 기술 교육을 배우는 기회를 제공합니다.</p>
-          <ul>
-            <li>매년 2월과 8월에 참가 신청</li>
-            <li>부트캠프 전 4개월간 운영</li>
-            <li>참여문의: techeer@techeer.net</li>
-          </ul>
-        </div>
-        <div class="edu-model-card animate-on-scroll">
-          <div class="edu-model-card-header">
-            <span class="edu-model-step">Step 2</span>
-            <h3 data-i18n="edu.2.title">테커 SW부트캠프</h3>
-          </div>
-          <p data-i18n="edu.2.desc">매년 2회 개설되는 <strong>5주간의 집중 온라인 부트캠프</strong>. 다른 활동과 병행이 불가한 몰입형 프로그램으로 1,000여 명의 수료생을 배출했습니다.</p>
-          <ul>
-            <li>12기 프로그램: 2026년 6월 예정</li>
-            <li>고성과자 테커 회원 선발</li>
-            <li>프로젝트 목록: techeerzip.cloud</li>
-          </ul>
-        </div>
-        <div class="edu-model-card animate-on-scroll">
-          <div class="edu-model-card-header">
-            <span class="edu-model-step">Step 3</span>
-            <h3 data-i18n="edu.3.title">테커 그룹 활동</h3>
-          </div>
-          <p data-i18n="edu.3.desc">선발된 테커 회원으로서 팀 프로젝트, 스터디, 해커톤, 기술 세션, 코딩 인터뷰 클리닉 등 <strong>취업에 초점을 맞춘</strong> 다양한 활동을 진행합니다.</p>
-          <ul>
-            <li>회원 → 팀 리더 → 멘토 → 디렉터</li>
-            <li>리더십 성장 경험 제공</li>
-            <li>인턴쉽 & 실리콘밸리 한 달 살기</li>
-          </ul>
-        </div>
+      <div class="edu-model-table-wrap animate-on-scroll">
+        <table class="edu-model-table">
+          <thead>
+            <tr>
+              <th data-i18n="edu.th.step">단계</th>
+              <th data-i18n="edu.th.program">프로그램</th>
+              <th data-i18n="edu.th.desc">설명</th>
+              <th data-i18n="edu.th.details">주요 내용</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="edu-row" data-step="1">
+              <td>
+                <div class="edu-step-badge">
+                  <span class="edu-step-num">1</span>
+                  <span class="edu-step-label">STEP</span>
+                </div>
+              </td>
+              <td>
+                <span class="edu-program-name" data-i18n="edu.1.title">테커 파트너스</span>
+                <span class="edu-program-sub">Pre-Bootcamp</span>
+              </td>
+              <td data-i18n="edu.1.desc">테커 SW부트캠프 사전 교육 성격의 <strong>전국대학 코딩 동아리</strong>로 테커 멘토단이 직접 운영합니다. 참가에 별도 제한이 없으며, 최소의 비용으로 학교에서 배울 수 없는 기본 기술 교육을 배우는 기회를 제공합니다.</td>
+              <td data-i18n="edu.1.details"><ul><li>매년 2월과 8월에 참가 신청</li><li>부트캠프 전 4개월간 운영</li><li>참여문의: techeer@techeer.net</li></ul></td>
+            </tr>
+            <tr class="edu-row" data-step="2">
+              <td>
+                <div class="edu-step-badge">
+                  <span class="edu-step-num">2</span>
+                  <span class="edu-step-label">STEP</span>
+                </div>
+              </td>
+              <td>
+                <span class="edu-program-name" data-i18n="edu.2.title">테커 SW부트캠프</span>
+                <span class="edu-program-sub">5-Week Intensive</span>
+              </td>
+              <td data-i18n="edu.2.desc">매년 2회 개설되는 <strong>5주간의 집중 온라인 부트캠프</strong>. 다른 활동과 병행이 불가한 몰입형 프로그램으로 1,000여 명의 수료생을 배출했습니다.</td>
+              <td data-i18n="edu.2.details"><ul><li>12기 프로그램: 2026년 6월 예정</li><li>고성과자 테커 회원 선발</li><li>프로젝트 목록: techeerzip.cloud</li></ul></td>
+            </tr>
+            <tr class="edu-row" data-step="3">
+              <td>
+                <div class="edu-step-badge">
+                  <span class="edu-step-num">3</span>
+                  <span class="edu-step-label">STEP</span>
+                </div>
+              </td>
+              <td>
+                <span class="edu-program-name" data-i18n="edu.3.title">테커 그룹 활동</span>
+                <span class="edu-program-sub">Team Activities</span>
+              </td>
+              <td data-i18n="edu.3.desc">선발된 테커 회원으로서 팀 프로젝트, 스터디, 해커톤, 기술 세션 등 <strong>취업에 초점을 맞춘</strong> 다양한 활동을 진행합니다.</td>
+              <td data-i18n="edu.3.details"><ul><li>회원 → 팀 리더 → 멘토 → 디렉터</li><li>리더십 성장 경험 제공</li><li>24시간 줌 & 기술 세션 참여</li></ul></td>
+            </tr>
+            <tr class="edu-row" data-step="4">
+              <td>
+                <div class="edu-step-badge">
+                  <span class="edu-step-num">4</span>
+                  <span class="edu-step-label">STEP</span>
+                </div>
+              </td>
+              <td>
+                <span class="edu-program-name" data-i18n="edu.4.title">취업 준비 클리닉</span>
+                <span class="edu-program-sub">Career Prep</span>
+              </td>
+              <td data-i18n="edu.4.desc">이력서 클리닉과 코딩 인터뷰를 체계적으로 준비하여 코딩테스트, 이력서, 인터뷰를 완성합니다. <strong>"경력있는 신입"</strong>으로 거듭나는 것이 목표입니다.</td>
+              <td data-i18n="edu.4.details"><ul><li>코딩테스트 체계적 준비</li><li>이력서 & 포트폴리오 클리닉</li><li>모의 인터뷰 진행</li></ul></td>
+            </tr>
+            <tr class="edu-row" data-step="5">
+              <td>
+                <div class="edu-step-badge">
+                  <span class="edu-step-num">5</span>
+                  <span class="edu-step-label">STEP</span>
+                </div>
+              </td>
+              <td>
+                <span class="edu-program-name" data-i18n="edu.5.title">실리콘밸리 한 달 살기</span>
+                <span class="edu-program-sub">Silicon Valley</span>
+              </td>
+              <td data-i18n="edu.5.desc">2021년부터 매년 운영 중인 실리콘밸리 현지 프로그램. CES쇼 참관, 빅테크 기업 탐방, 현지 엔지니어 네트워킹 등 <strong>글로벌 경험</strong>을 제공합니다.</td>
+              <td data-i18n="edu.5.details"><ul><li>2021년부터 매년 운영 (현재 10기수)</li><li>CES쇼 참관 & 빅테크 기업 탐방</li><li>현지 엔지니어 네트워킹</li></ul></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section class="achievements section" id="achievements">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag" data-i18n="ach.tag">Achievements</span>
+        <h2 class="section-title" data-i18n="ach.title">테커 <span class="text-accent">성과</span></h2>
+        <p class="section-desc" data-i18n="ach.desc">
+          테커는 한국 내 기업과 손잡고 검증된 테커 학생들을 현장실습, 인턴 등으로 채용 지원합니다.<br>
+          테커는 일체의 채용 Recruiting 비용이 없습니다.
+        </p>
+      </div>
+      <h3 class="achievements-subtitle animate-on-scroll" data-i18n="ach.subtitle">부트캠프 수료생 취업 및 테커 멤버 입사 기업</h3>
+      <div class="company-grid animate-on-scroll">
+        <!-- 글로벌 & 영문 기업 -->
+        <span class="company-tag">AB180</span>
+        <span class="company-tag">Amazon - AWS</span>
+        <span class="company-tag">CrowdStrike (실리콘밸리)</span>
+        <span class="company-tag">IBM</span>
+        <span class="company-tag">Jabra (실리콘밸리)</span>
+        <span class="company-tag">KT</span>
+        <span class="company-tag">SAP Korea</span>
+        <span class="company-tag">SSAFY 2명 배출</span>
+        <span class="company-tag">SSG.COM</span>
+        <span class="company-tag">Tesla (실리콘밸리)</span>
+        <!-- 국내 대기업 -->
+        <span class="company-tag">KB국민은행</span>
+        <span class="company-tag">KB금융</span>
+        <span class="company-tag">G마켓</span>
+        <span class="company-tag">SK브로드밴드</span>
+        <span class="company-tag">삼성전자</span>
+        <span class="company-tag">삼성전자 - 모바일</span>
+        <span class="company-tag">삼성메디컬센터</span>
+        <span class="company-tag">현대자동차 AI 연구소</span>
+        <span class="company-tag">현대기아차 AI연구소</span>
+        <span class="company-tag">현대모비스</span>
+        <span class="company-tag">현대오토에버</span>
+        <span class="company-tag">한화비전</span>
+        <span class="company-tag">한화테크윈</span>
+        <span class="company-tag">한국타이어</span>
+        <span class="company-tag">교보생명</span>
+        <span class="company-tag">대웅제약</span>
+        <!-- 테크 기업 -->
+        <span class="company-tag">네이버</span>
+        <span class="company-tag">카카오모빌리티</span>
+        <span class="company-tag">카카오뱅크</span>
+        <span class="company-tag">카카오엔터프라이즈</span>
+        <span class="company-tag">카카오페이증권</span>
+        <span class="company-tag">라인</span>
+        <span class="company-tag">쿠팡</span>
+        <span class="company-tag">당근마켓</span>
+        <span class="company-tag">토스 (3명 배출)</span>
+        <span class="company-tag">컬리</span>
+        <span class="company-tag">무신사</span>
+        <span class="company-tag">오늘의집</span>
+        <span class="company-tag">두나무</span>
+        <span class="company-tag">넥슨</span>
+        <span class="company-tag">크래프톤</span>
+        <span class="company-tag">채널톡</span>
+        <span class="company-tag">캐치테이블</span>
+        <span class="company-tag">티맥스</span>
+        <!-- 스타트업 & 중소기업 -->
+        <span class="company-tag">가비아</span>
+        <span class="company-tag">구름</span>
+        <span class="company-tag">단비교육</span>
+        <span class="company-tag">리턴제로</span>
+        <span class="company-tag">링글</span>
+        <span class="company-tag">미리디</span>
+        <span class="company-tag">베어로보틱스 (실리콘밸리기반)</span>
+        <span class="company-tag">에이블리</span>
+        <span class="company-tag">와탭랩스</span>
+        <span class="company-tag">우주일렉트로닉스</span>
+        <span class="company-tag">이스트소프트</span>
+        <span class="company-tag">인터파크트리플</span>
+        <span class="company-tag">중고나라</span>
+        <span class="company-tag">코드스테이츠</span>
+        <span class="company-tag">크리에이트립</span>
+        <span class="company-tag">클래스유</span>
+        <span class="company-tag">파수</span>
+        <span class="company-tag">피플펀드</span>
+        <span class="company-tag">제이엘케이(AI의료)</span>
+        <span class="company-tag">스타트업 창업</span>
+        <!-- 대학원 & 프로그램 -->
+        <span class="company-tag">카네기멜론 대학원</span>
+        <span class="company-tag">카이스트 대학원</span>
+        <span class="company-tag">포항공대 대학원</span>
+        <span class="company-tag">소프트웨어 마에스트로(8명 배출)</span>
+      </div>
+      <p class="achievements-note animate-on-scroll" data-i18n="ach.note">Bold로 표시된 기업은 테커 멤버가 입사한 기업입니다. 협업 문의: techeer@techeer.net</p>
     </div>
   </section>
 
@@ -528,51 +643,121 @@
         <span class="uni-tag">한신대학교</span>
         <span class="uni-tag">UC Berkeley</span>
         <span class="uni-tag">San Jose State Univ.</span>
-        <span class="uni-tag">외 4개 대학</span>
+        <span class="uni-tag" data-i18n="uni.more">외 4개 대학</span>
       </div>
       <p class="uni-note animate-on-scroll" data-i18n="uni.note">* 공식 테커 프로그램 지원 대학교 (1회 이상)</p>
     </div>
   </section>
 
-  <!-- Achievements Section -->
-  <section class="achievements section" id="achievements">
+  <!-- Testimonials Section -->
+  <section class="testimonials section" id="testimonials">
     <div class="container">
       <div class="section-header animate-on-scroll">
-        <span class="section-tag" data-i18n="ach.tag">Achievements</span>
-        <h2 class="section-title" data-i18n="ach.title">테커 <span class="text-accent">성과</span></h2>
-        <p class="section-desc" data-i18n="ach.desc">
-          테커는 한국 내 기업과 손잡고 검증된 테커 학생들을 현장실습, 인턴 등으로 채용 지원합니다.<br>
-          테커는 일체의 채용 Recruiting 비용이 없습니다.
-        </p>
+        <span class="section-tag" data-i18n="testimonials.tag">Reviews</span>
+        <h2 class="section-title" data-i18n="testimonials.title">부트캠프 <span class="text-accent">수료생 후기</span></h2>
+        <p class="section-desc" data-i18n="testimonials.desc">테커 SW부트캠프를 직접 경험한 수료생들의 솔직한 이야기</p>
       </div>
-      <h3 class="achievements-subtitle animate-on-scroll" data-i18n="ach.subtitle">부트캠프 수료생 취업 및 테커 멤버 입사 기업</h3>
-      <div class="company-grid animate-on-scroll">
-        <span class="company-tag company-tag--bold">삼성전자</span>
-        <span class="company-tag company-tag--bold">LG전자</span>
-        <span class="company-tag company-tag--bold">네이버</span>
-        <span class="company-tag company-tag--bold">카카오</span>
-        <span class="company-tag company-tag--bold">라인</span>
-        <span class="company-tag company-tag--bold">쿠팡</span>
-        <span class="company-tag company-tag--bold">배달의민족</span>
-        <span class="company-tag company-tag--bold">당근마켓</span>
-        <span class="company-tag company-tag--bold">토스</span>
-        <span class="company-tag company-tag--bold">컬리</span>
-        <span class="company-tag company-tag--bold">SK</span>
-        <span class="company-tag company-tag--bold">현대</span>
-        <span class="company-tag">NHN</span>
-        <span class="company-tag">하이퍼커넥트</span>
-        <span class="company-tag">야놀자</span>
-        <span class="company-tag">직방</span>
-        <span class="company-tag">버킷플레이스</span>
-        <span class="company-tag">소카</span>
-        <span class="company-tag">데브시스터즈</span>
-        <span class="company-tag">두나무</span>
-        <span class="company-tag">뱅크샐러드</span>
-        <span class="company-tag">마이리얼트립</span>
-        <span class="company-tag">리디</span>
-        <span class="company-tag">와디즈</span>
+      <div class="testimonials-grid">
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-stars">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="testimonial-text" data-i18n="testimonials.1.text">"성인이 되고나서 미래를 위해 첫 '도전'을 했습니다. 공부의 목적과 방향성에 대해 이해하고 내 자신과 부딪히며 성장하는 여정에 떠났습니다. 순간 위기가 있었지만 버티고 버텨 목적지를 향해가는 나를 보면 뿌듯함을 느낍니다. 멘토님, 섹션 진행자, 부트캠프를 참여한 모든 분들 화이팅입니다."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">T</div>
+            <div>
+              <strong data-i18n="testimonials.1.author">테커 부트캠프 수료생</strong>
+              <span data-i18n="testimonials.1.sub">첫 도전의 성장기</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-stars">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="testimonial-text" data-i18n="testimonials.2.text">"이번에 부트캠프를 처음으로 참여하게 되었는데 확실히 대학교에서 배우고 다뤄보지 못했던 내용들을 많이 배워보고 실습 및 응용해보는 시간을 가지게 되어서 너무 행복하고 좋았습니다. 이 부트캠프를 해보면서 제가 좋아하는 것이 무엇이고 흥미가 생기게 된 것이 무엇인지 잘 알게 되면서 진로 설정 및 방향도 좀 잡혀가는 좋은 시간이었습니다. 저에게는 너무 의미 있고 뜻깊은 부트캠프였고 다음 기수 지원 공고가 나오면 한 번 더 도전해볼 생각입니다!"</p>
+          <button class="testimonial-toggle" data-i18n="testimonials.more">더 보기</button>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">T</div>
+            <div>
+              <strong data-i18n="testimonials.2.author">테커 부트캠프 수료생</strong>
+              <span data-i18n="testimonials.2.sub">진로를 찾은 경험</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-stars">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="testimonial-text" data-i18n="testimonials.3.text">"이번 테커 부트캠프는, 개인적으로 대학에서의 한 학기, 아니 일년 이상의 기간동안 배웠던 내용보다도 더 많은 것을 배울 수 있었던 시간이었습니다. 5주간의 프로젝트를 진행하며, 앤드류님의 브레인 트레이닝으로부터 시작해, 여러 기술 세션을 거쳐 이력서 + 자소서 + 면접 특강까지 자연스러운 흐름에 따라 준비된 세션 구성이 만족스러웠습니다. 프로젝트를 중심으로 필요한 것을 스스로 찾아서 공부하고, 도움이 필요할 때에는 24시간 상주하시는 멘토님들께 피드백을 요청드리는 형식으로 진행되었다는 점이 정말 좋았습니다. 스스로 필요에 의해서 공부를 진행하다보니, 하나를 배워도 더욱 기억에 오래 남고, 자기주도적으로 공부하는 태도를 배울 수 있었습니다."</p>
+          <button class="testimonial-toggle" data-i18n="testimonials.more">더 보기</button>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">T</div>
+            <div>
+              <strong data-i18n="testimonials.3.author">테커 부트캠프 수료생</strong>
+              <span data-i18n="testimonials.3.sub">대학 1년 이상의 배움</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <p class="achievements-note animate-on-scroll" data-i18n="ach.note">Bold로 표시된 기업은 테커 멤버가 입사한 기업입니다. 협업 문의: techeer@techeer.net</p>
+    </div>
+  </section>
+
+  <!-- Videos Section -->
+  <section class="videos section" id="videos">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag" data-i18n="videos.tag">Videos</span>
+        <h2 class="section-title" data-i18n="videos.title">부트캠프 <span class="text-accent">우수팀 발표 영상</span></h2>
+        <p class="section-desc" data-i18n="videos.desc">테커 SW부트캠프 수료생들의 실제 프로젝트 발표 영상을 확인하세요</p>
+      </div>
+      <div class="videos-grid">
+        <div class="video-card animate-on-scroll">
+          <div class="video-wrapper youtube-lazy" data-video-id="x8D3L5efegk">
+            <img class="youtube-thumb" src="https://img.youtube.com/vi/x8D3L5efegk/hqdefault.jpg" alt="11기 최우수팀 발표" loading="lazy">
+            <button class="youtube-play-btn" aria-label="Play video">
+              <svg width="68" height="48" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
+            </button>
+          </div>
+          <h3 class="video-title" data-i18n="videos.1.title">11기 최우수팀 발표</h3>
+        </div>
+        <div class="video-card animate-on-scroll">
+          <div class="video-wrapper youtube-lazy" data-video-id="ExmYixVa0_Y">
+            <img class="youtube-thumb" src="https://img.youtube.com/vi/ExmYixVa0_Y/hqdefault.jpg" alt="11기 우수팀 발표" loading="lazy">
+            <button class="youtube-play-btn" aria-label="Play video">
+              <svg width="68" height="48" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
+            </button>
+          </div>
+          <h3 class="video-title" data-i18n="videos.2.title">11기 우수팀 발표</h3>
+        </div>
+        <div class="video-card animate-on-scroll">
+          <div class="video-wrapper youtube-lazy" data-video-id="JO88nSvntlo">
+            <img class="youtube-thumb" src="https://img.youtube.com/vi/JO88nSvntlo/hqdefault.jpg" alt="11기 우수팀 발표" loading="lazy">
+            <button class="youtube-play-btn" aria-label="Play video">
+              <svg width="68" height="48" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
+            </button>
+          </div>
+          <h3 class="video-title" data-i18n="videos.3.title">11기 우수팀 발표</h3>
+        </div>
+      </div>
+      <div class="videos-more animate-on-scroll">
+        <a href="https://www.techeerzip.cloud" target="_blank" rel="noopener noreferrer" class="btn btn--ghost btn--lg">
+          <span data-i18n="videos.btn">전체 프로젝트 보기 — techeerzip.cloud</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -582,7 +767,7 @@
       <div class="section-header animate-on-scroll">
         <span class="section-tag" data-i18n="sv.tag">Silicon Valley Living</span>
         <h2 class="section-title" data-i18n="sv.title">실리콘밸리 <span class="text-accent">한 달 살기</span></h2>
-        <p class="section-desc" data-i18n="sv.desc">2021년부터 매년 운영, 현재 9기수까지 완료</p>
+        <p class="section-desc" data-i18n="sv.desc">2021년부터 매년 운영, 현재 10기수까지 완료</p>
       </div>
       <div class="sv-living-layout">
         <div class="sv-living-video animate-on-scroll">
@@ -651,72 +836,6 @@
     </div>
   </section>
 
-  <!-- Sponsors Section -->
-  <section class="sponsors section" id="sponsors">
-    <div class="container">
-      <div class="section-header animate-on-scroll">
-        <span class="section-tag" data-i18n="sponsors.tag">Sponsors</span>
-        <h2 class="section-title" data-i18n="sponsors.title">테커 <span class="text-accent">후원사</span></h2>
-        <p class="section-desc" data-i18n="sponsors.desc">테커의 비전에 공감하고 함께 성장을 지원하는 파트너 기업들</p>
-      </div>
-      <div class="sponsor-grid animate-on-scroll">
-        <div class="sponsor-card"><img src="assets/sponsors/sponsor-1.png" alt="Sponsor" loading="lazy"></div>
-        <div class="sponsor-card"><img src="assets/sponsors/sponsor-2.png" alt="Sponsor" loading="lazy"></div>
-        <div class="sponsor-card"><img src="assets/sponsors/sponsor-3.png" alt="Sponsor" loading="lazy"></div>
-        <div class="sponsor-card"><img src="assets/sponsors/sponsor-4.png" alt="Sponsor" loading="lazy"></div>
-        <div class="sponsor-card"><img src="assets/sponsors/sponsor-5.png" alt="Sponsor" loading="lazy"></div>
-        <div class="sponsor-card"><img src="assets/sponsors/sponsor-6.png" alt="Sponsor" loading="lazy"></div>
-        <div class="sponsor-card"><img src="assets/sponsors/sponsor-7.png" alt="Sponsor" loading="lazy"></div>
-        <div class="sponsor-card"><img src="assets/sponsors/sponsor-8.png" alt="Sponsor" loading="lazy"></div>
-        <div class="sponsor-card"><img src="assets/sponsors/sponsor-9.png" alt="Sponsor" loading="lazy"></div>
-        <div class="sponsor-card"><img src="assets/sponsors/sponsor-10.png" alt="Sponsor" loading="lazy"></div>
-        <div class="sponsor-card"><img src="assets/sponsors/sponsor-11.png" alt="Sponsor" loading="lazy"></div>
-      </div>
-      <p class="sponsor-note animate-on-scroll" data-i18n="sponsors.note">후원사 로고는 기업과의 협약에 따라 게재됩니다. 후원 문의: techeer@techeer.net</p>
-    </div>
-  </section>
-
-  <!-- Goods Section -->
-  <section class="goods section" id="goods">
-    <div class="container">
-      <div class="section-header animate-on-scroll">
-        <span class="section-tag" data-i18n="goods.tag">Goods</span>
-        <h2 class="section-title" data-i18n="goods.title">테커 <span class="text-accent">굿즈</span></h2>
-        <p class="section-desc" data-i18n="goods.desc">년 2회 테커 굿즈를 제작하여 회원들에게 제공합니다</p>
-      </div>
-      <div class="goods-grid">
-        <div class="goods-card animate-on-scroll">
-          <div class="goods-card-img">
-            <img src="assets/goods/goal-studio-hoodie.jpg" alt="Goal Studio 후드" loading="lazy">
-          </div>
-          <h3 class="goods-card-title" data-i18n="goods.1.title">Goal Studio 후드</h3>
-          <p class="goods-card-desc" data-i18n="goods.1.desc">Goal Studio와 콜라보한 프리미엄 테커 후드티</p>
-        </div>
-        <div class="goods-card animate-on-scroll">
-          <div class="goods-card-img">
-            <img src="assets/goods/goal-studio-tshirt.png" alt="Goal Studio 티셔츠" loading="lazy">
-          </div>
-          <h3 class="goods-card-title" data-i18n="goods.2.title">Goal Studio 티셔츠</h3>
-          <p class="goods-card-desc" data-i18n="goods.2.desc">Goal Studio와 콜라보한 테커 공식 티셔츠</p>
-        </div>
-        <div class="goods-card animate-on-scroll">
-          <div class="goods-card-img">
-            <img src="assets/goods/techeer-hoodie.jpg" alt="테커 후드" loading="lazy">
-          </div>
-          <h3 class="goods-card-title" data-i18n="goods.3.title">테커 후드</h3>
-          <p class="goods-card-desc" data-i18n="goods.3.desc">테커 로고가 새겨진 시그니처 후드티</p>
-        </div>
-        <div class="goods-card animate-on-scroll">
-          <div class="goods-card-img">
-            <img src="assets/goods/tumbler.jpg" alt="텀블러" loading="lazy">
-          </div>
-          <h3 class="goods-card-title" data-i18n="goods.4.title">텀블러</h3>
-          <p class="goods-card-desc" data-i18n="goods.4.desc">테커 로고 텀블러 — 코딩할 때 필수 아이템</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Events Section -->
   <section class="events section" id="events">
     <div class="container">
@@ -778,6 +897,47 @@
     </div>
   </section>
 
+  <!-- Goods Section -->
+  <section class="goods section" id="goods">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag" data-i18n="goods.tag">Goods</span>
+        <h2 class="section-title" data-i18n="goods.title">테커 <span class="text-accent">굿즈</span></h2>
+        <p class="section-desc" data-i18n="goods.desc">년 2회 테커 굿즈를 제작하여 회원들에게 제공합니다</p>
+      </div>
+      <div class="goods-grid">
+        <div class="goods-card animate-on-scroll">
+          <div class="goods-card-img">
+            <img src="assets/goods/goal-studio-hoodie.jpg" alt="Goal Studio 후드" loading="lazy">
+          </div>
+          <h3 class="goods-card-title" data-i18n="goods.1.title">Goal Studio 후드</h3>
+          <p class="goods-card-desc" data-i18n="goods.1.desc">Goal Studio와 콜라보한 프리미엄 테커 후드티</p>
+        </div>
+        <div class="goods-card animate-on-scroll">
+          <div class="goods-card-img">
+            <img src="assets/goods/goal-studio-tshirt.png" alt="Goal Studio 티셔츠" loading="lazy">
+          </div>
+          <h3 class="goods-card-title" data-i18n="goods.2.title">Goal Studio 티셔츠</h3>
+          <p class="goods-card-desc" data-i18n="goods.2.desc">Goal Studio와 콜라보한 테커 공식 티셔츠</p>
+        </div>
+        <div class="goods-card animate-on-scroll">
+          <div class="goods-card-img">
+            <img src="assets/goods/techeer-hoodie.jpg" alt="테커 후드" loading="lazy">
+          </div>
+          <h3 class="goods-card-title" data-i18n="goods.3.title">테커 후드</h3>
+          <p class="goods-card-desc" data-i18n="goods.3.desc">테커 로고가 새겨진 시그니처 후드티</p>
+        </div>
+        <div class="goods-card animate-on-scroll">
+          <div class="goods-card-img">
+            <img src="assets/goods/tumbler.jpg" alt="텀블러" loading="lazy">
+          </div>
+          <h3 class="goods-card-title" data-i18n="goods.4.title">텀블러</h3>
+          <p class="goods-card-desc" data-i18n="goods.4.desc">테커 로고 텀블러 — 코딩할 때 필수 아이템</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Instagram / Social Section -->
   <section class="social section" id="social">
     <div class="container">
@@ -794,6 +954,31 @@
           <img src="assets/instagram-grid.png" alt="Techeer Instagram @techeer_in_sv" loading="lazy">
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Sponsors Section -->
+  <section class="sponsors section" id="sponsors">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag" data-i18n="sponsors.tag">Sponsors</span>
+        <h2 class="section-title" data-i18n="sponsors.title">테커 <span class="text-accent">후원사</span></h2>
+        <p class="section-desc" data-i18n="sponsors.desc">테커의 비전에 공감하고 함께 성장을 지원하는 파트너 기업들</p>
+      </div>
+      <div class="sponsor-grid animate-on-scroll">
+        <div class="sponsor-card"><img src="assets/sponsors/sponsor-1.png" alt="Sponsor" loading="lazy"></div>
+        <div class="sponsor-card"><img src="assets/sponsors/sponsor-2.png" alt="Sponsor" loading="lazy"></div>
+        <div class="sponsor-card"><img src="assets/sponsors/sponsor-3.png" alt="Sponsor" loading="lazy"></div>
+        <div class="sponsor-card"><img src="assets/sponsors/sponsor-4.png" alt="Sponsor" loading="lazy"></div>
+        <div class="sponsor-card"><img src="assets/sponsors/sponsor-5.png" alt="Sponsor" loading="lazy"></div>
+        <div class="sponsor-card"><img src="assets/sponsors/sponsor-6.png" alt="Sponsor" loading="lazy"></div>
+        <div class="sponsor-card"><img src="assets/sponsors/sponsor-7.png" alt="Sponsor" loading="lazy"></div>
+        <div class="sponsor-card"><img src="assets/sponsors/sponsor-8.png" alt="Sponsor" loading="lazy"></div>
+        <div class="sponsor-card"><img src="assets/sponsors/sponsor-9.png" alt="Sponsor" loading="lazy"></div>
+        <div class="sponsor-card"><img src="assets/sponsors/sponsor-10.png" alt="Sponsor" loading="lazy"></div>
+        <div class="sponsor-card"><img src="assets/sponsors/sponsor-11.png" alt="Sponsor" loading="lazy"></div>
+      </div>
+      <p class="sponsor-note animate-on-scroll" data-i18n="sponsors.note">후원사 로고는 기업과의 협약에 따라 게재됩니다. 후원 문의: techeer@techeer.net</p>
     </div>
   </section>
 

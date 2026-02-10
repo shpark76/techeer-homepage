@@ -95,18 +95,28 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- Floating particles in hero ---
   const particlesContainer = document.getElementById('particles');
 
+  const particleColors = [
+    '108, 92, 231',   // indigo
+    '84, 160, 255',   // sky
+    '0, 206, 201',    // teal
+    '255, 107, 107',  // coral
+    '240, 165, 0',    // amber
+    '46, 213, 115',   // emerald
+  ];
+
   const createParticle = () => {
     const particle = document.createElement('div');
     const size = Math.random() * 3 + 1;
     const x = Math.random() * 100;
-    const duration = Math.random() * 15 + 10;
-    const delay = Math.random() * 10;
+    const duration = Math.random() * 18 + 12;
+    const delay = Math.random() * 12;
+    const color = particleColors[Math.floor(Math.random() * particleColors.length)];
 
     particle.style.cssText = `
       position: absolute;
       width: ${size}px;
       height: ${size}px;
-      background: rgba(108, 92, 231, ${Math.random() * 0.3 + 0.1});
+      background: rgba(${color}, ${Math.random() * 0.25 + 0.08});
       border-radius: 50%;
       left: ${x}%;
       bottom: -10px;
@@ -117,8 +127,8 @@ document.addEventListener('DOMContentLoaded', () => {
     particlesContainer.appendChild(particle);
   };
 
-  // Create particles
-  for (let i = 0; i < 30; i++) {
+  // Create particles — fewer for subtlety
+  for (let i = 0; i < 20; i++) {
     createParticle();
   }
 
@@ -182,8 +192,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const videoModalClose = document.getElementById('videoModalClose');
   const videoModalWrapper = document.getElementById('videoModalWrapper');
 
-  const openVideoModal = (videoId) => {
-    videoModalWrapper.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+  const openVideoModal = (videoId, startTime) => {
+    const startParam = startTime ? `&start=${startTime}` : '';
+    videoModalWrapper.innerHTML = `<iframe src="https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1${startParam}" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
     videoModal.classList.add('active');
     document.body.style.overflow = 'hidden';
   };
@@ -200,20 +211,34 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // --- YouTube Click-to-Play ---
+  const handleVideoClick = function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    const el = this.closest('[data-video-id]');
+    if (!el) return;
+    const videoId = el.getAttribute('data-video-id');
+    const startTime = el.getAttribute('data-video-start');
+    if (videoId) openVideoModal(videoId, startTime);
+  };
+
   // Media card YouTube videos open in popup
   document.querySelectorAll('.media-card--video').forEach(card => {
     card.style.cursor = 'pointer';
-    card.addEventListener('click', function() {
-      const videoId = this.getAttribute('data-video-id');
-      openVideoModal(videoId);
-    });
+    card.addEventListener('click', handleVideoClick);
   });
 
+  // Lazy-loaded YouTube thumbnails
   document.querySelectorAll('.youtube-lazy').forEach(wrapper => {
-    wrapper.addEventListener('click', function() {
-      const videoId = this.getAttribute('data-video-id');
-      openVideoModal(videoId);
-    });
+    wrapper.addEventListener('click', handleVideoClick);
+  });
+
+  // Also attach to play buttons directly (safety fallback)
+  document.querySelectorAll('.youtube-play-btn').forEach(btn => {
+    btn.addEventListener('click', handleVideoClick);
+  });
+
+  document.querySelectorAll('.play-icon').forEach(icon => {
+    icon.addEventListener('click', handleVideoClick);
   });
 
   // --- Contact Modal ---
@@ -391,6 +416,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
   setupGallery('.event-card-photos');
   setupGallery('.goods-grid');
+
+  // --- Testimonial expand/collapse ---
+  const getToggleText = (expanded) => {
+    const lang = typeof currentLang !== 'undefined' ? currentLang : 'ko';
+    const t = typeof translations !== 'undefined' ? translations[lang] : null;
+    if (expanded) return t?.['testimonials.less'] || '접기';
+    return t?.['testimonials.more'] || '더 보기';
+  };
+
+  document.querySelectorAll('.testimonial-toggle').forEach(btn => {
+    const text = btn.previousElementSibling;
+    // Hide toggle if text doesn't overflow
+    if (text && text.scrollHeight <= 200) {
+      btn.style.display = 'none';
+    }
+    btn.addEventListener('click', () => {
+      const isExpanded = text.classList.toggle('expanded');
+      btn.textContent = getToggleText(isExpanded);
+    });
+  });
 
   // Make recruitment poster clickable in lightbox
   document.querySelectorAll('.recruitment-poster img').forEach(img => {
