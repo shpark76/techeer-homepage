@@ -1073,6 +1073,73 @@ h1 {
   padding: 20px;
 }
 
+.media-action-grid {
+  align-items: stretch;
+}
+
+.media-action-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 16px;
+  align-items: start;
+  min-height: 150px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  box-shadow: 0 14px 34px rgba(17, 24, 39, 0.07);
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.media-action-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(40, 100, 255, 0.28);
+  box-shadow: 0 20px 46px rgba(17, 24, 39, 0.12);
+}
+
+.media-action-icon {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 950;
+  line-height: 1;
+}
+
+.media-action-youtube .media-action-icon { background: #e62117; }
+.media-action-instagram .media-action-icon { background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045); }
+.media-action-blog .media-action-icon { background: #111827; font-size: 11px; }
+
+.media-action-copy {
+  display: grid;
+  gap: 8px;
+}
+
+.media-action-copy strong {
+  font-size: 21px;
+  line-height: 1.25;
+}
+
+.media-action-copy span {
+  color: var(--muted);
+}
+
+.media-action-arrow {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: #394150;
+  font-weight: 900;
+  line-height: 1;
+}
+
 .table-wrap {
   overflow-x: auto;
   border: 1px solid var(--line);
