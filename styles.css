@@ -33,34 +33,6 @@ img { display: block; max-width: 100%; }
   margin: 0 auto;
 }
 
-.announcement-banner {
-  background: linear-gradient(135deg, var(--blue), var(--violet));
-  color: #fff;
-  padding: 12px 0;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 550;
-}
-
-.announcement-banner .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.announcement-banner a {
-  color: #fff;
-  text-decoration: underline;
-  font-weight: 700;
-  white-space: nowrap;
-}
-
-.announcement-banner a:hover {
-  opacity: 0.9;
-}
-
 .site-header {
   position: sticky;
   top: 0;
@@ -1251,6 +1223,59 @@ h1 {
   object-fit: cover;
 }
 
+.weekly-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 12px;
+}
+
+.weekly-photo {
+  position: relative;
+  margin: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.weekly-photo-main {
+  grid-column: 1 / -1;
+}
+
+.weekly-photo img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.weekly-photo-main img {
+  aspect-ratio: 16 / 9;
+}
+
+.weekly-photo figcaption {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: rgba(15, 23, 42, 0.72);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.weekly-photo figcaption strong {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.weekly-photo figcaption span {
+  font-size: 12px;
+  opacity: 0.85;
+}
+
 .apply-panel {
   padding: 34px;
   color: #fff;
@@ -1397,8 +1422,6 @@ h1 {
 
 @media (max-width: 640px) {
   .container { width: min(calc(100% - 28px), 1120px); }
-  .announcement-banner { padding: 10px 0; font-size: 13px; }
-  .announcement-banner .container { gap: 8px; }
   .brand img { width: 92px; }
   .nav { min-height: 64px; }
   .hero { min-height: auto; }
