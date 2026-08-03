@@ -1449,3 +1449,58 @@ h1 {
   .press-thumb img { min-height: 220px; }
   .footer-inner { align-items: flex-start; flex-direction: column; }
 }
+
+/* Growth overview diagram (path page) */
+.growth-overview { background: #f8fafc; }
+.growth-overview-figure {
+  margin: 0;
+  padding: 28px 32px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(17, 24, 39, 0.06);
+  overflow: hidden;
+}
+.growth-overview-figure svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: visible;
+  font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+.growth-overview-figure .gd-link-brand line { stroke: #a5b4fc; stroke-width: 2.25; fill: none; stroke-linecap: round; }
+.growth-overview-figure .gd-eyebrow    { font-size: 13px; font-weight: 700; letter-spacing: .16em; fill: #4338ca; }
+.growth-overview-figure .gd-h1         { font-size: 32px; font-weight: 800; letter-spacing:-0.02em; fill: #0f172a; }
+.growth-overview-figure .gd-h1-sub     { font-size: 15px; fill: #475569; }
+.growth-overview-figure .gd-display    { font-weight: 800; font-size: 36px; fill: #fff; letter-spacing:-0.02em; }
+.growth-overview-figure .gd-display-s  { font-weight: 600; font-size: 15px; fill: rgba(255,255,255,0.88); letter-spacing:-0.005em; }
+.growth-overview-figure .gd-title      { font-weight: 700; font-size: 17px; letter-spacing:-0.01em; }
+.growth-overview-figure .gd-body       { font-size: 13px; fill: #475569; }
+.growth-overview-figure .gd-body-em    { font-size: 13px; fill: #0f172a; font-weight: 500; }
+.growth-overview-figure .gd-stat-num   { font-size: 30px; font-weight: 800; fill: #0f172a; letter-spacing:-0.02em; }
+.growth-overview-figure .gd-stat-lbl   { font-size: 12px; fill: #64748b; font-weight: 500; }
+.growth-overview-figure .gd-section-eye { font-size: 12px; font-weight: 700; letter-spacing:.16em; fill: #4338ca; }
+.growth-overview-figure .gd-section-h   { font-weight: 700; font-size: 20px; letter-spacing:-0.01em; fill: #0f172a; }
+.growth-overview-figure .gd-section-s   { font-size: 13px; fill: #475569; }
+.growth-overview-figure .gd-lvl-tag  { font-size: 12px; font-weight: 700; fill: rgba(255,255,255,0.85); letter-spacing:.12em; }
+.growth-overview-figure .gd-lvl-name { font-size: 17px; font-weight: 800; fill: #fff; letter-spacing:-0.01em; }
+.growth-overview-figure .gd-lvl-d    { font-size: 12px; fill: #475569; font-weight: 500; }
+.growth-overview-figure .gd-value-t  { font-size: 20px; font-weight: 800; letter-spacing:-0.01em; }
+.growth-overview-figure .gd-value-d  { font-size: 12px; fill: #475569; }
+.growth-overview-figure .gd-hi-t     { font-size: 18px; font-weight: 800; letter-spacing:-0.01em; fill: #0f172a; }
+.growth-overview-figure .gd-hi-d     { font-size: 12px; fill: #475569; }
+.growth-overview-figure .gd-title-s  { font-weight: 700; font-size: 15px; letter-spacing:-0.01em; }
+.growth-overview-figure .gd-body-s   { font-size: 11.5px; fill: #475569; }
+.growth-overview-figure .gd-body-s-em{ font-size: 11.5px; fill: #0f172a; font-weight: 500; }
+
+@media (max-width: 900px) {
+  .growth-overview-figure {
+    padding: 12px;
+    border-radius: 12px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .growth-overview-figure svg { width: 1100px; max-width: none; }
+}
